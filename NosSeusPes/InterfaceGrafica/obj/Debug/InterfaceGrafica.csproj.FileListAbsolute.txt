@@ -59,3 +59,34 @@ C:\Users\Giovano\Desktop\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.
 C:\Users\Giovano\Desktop\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.csproj.CopyComplete
 C:\Users\Giovano\Desktop\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.exe
 C:\Users\Giovano\Desktop\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.pdb
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\bin\Debug\InterfaceGrafica.exe.config
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\bin\Debug\InterfaceGrafica.exe
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\bin\Debug\InterfaceGrafica.pdb
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\bin\Debug\EntityFramework.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\bin\Debug\SapatariaBiblioteca.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\bin\Debug\SapatariaBiblioteca.pdb
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\bin\Debug\SapatariaBiblioteca.dll.config
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\bin\Debug\EntityFramework.xml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.csprojAssemblyReference.cache
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\MainWindow.g.cs
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\WindowCadastroCliente.g.cs
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\WindowCadastroModelo.g.cs
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\WindowCadastroPedido.g.cs
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\WindowGerarVenda.g.cs
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\App.g.cs
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica_MarkupCompile.cache
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica_MarkupCompile.lref
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\MainWindow.baml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\WindowCadastroCliente.baml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\WindowCadastroModelo.baml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\WindowCadastroPedido.baml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\WindowGerarVenda.baml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.g.resources
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.Properties.Resources.resources
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.csproj.GenerateResource.cache
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.csproj.CoreCompileInputs.cache
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.csproj.CopyComplete
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.exe
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.pdb

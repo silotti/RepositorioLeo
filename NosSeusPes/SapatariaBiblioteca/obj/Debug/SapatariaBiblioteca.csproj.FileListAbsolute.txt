@@ -24,3 +24,15 @@ C:\Users\Giovano\Desktop\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBibli
 C:\Users\Giovano\Desktop\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.dll
 C:\Users\Giovano\Desktop\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.pdb
 C:\Users\Giovano\Desktop\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csprojAssemblyReference.cache
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\SapatariaBiblioteca.dll.config
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\SapatariaBiblioteca.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\SapatariaBiblioteca.pdb
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.xml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csprojAssemblyReference.cache
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csproj.CopyComplete
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.pdb
