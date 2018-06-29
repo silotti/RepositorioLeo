@@ -1,0 +1,18 @@
+c:\users\giovano\source\repos\NosSeusPes\ConsoleNosSeusPes\bin\Debug\ConsoleNosSeusPes.exe.config
+c:\users\giovano\source\repos\NosSeusPes\ConsoleNosSeusPes\bin\Debug\ConsoleNosSeusPes.exe
+c:\users\giovano\source\repos\NosSeusPes\ConsoleNosSeusPes\bin\Debug\ConsoleNosSeusPes.pdb
+c:\users\giovano\source\repos\NosSeusPes\ConsoleNosSeusPes\obj\Debug\ConsoleNosSeusPes.csprojAssemblyReference.cache
+c:\users\giovano\source\repos\NosSeusPes\ConsoleNosSeusPes\obj\Debug\ConsoleNosSeusPes.csproj.CoreCompileInputs.cache
+c:\users\giovano\source\repos\NosSeusPes\ConsoleNosSeusPes\obj\Debug\ConsoleNosSeusPes.exe
+c:\users\giovano\source\repos\NosSeusPes\ConsoleNosSeusPes\obj\Debug\ConsoleNosSeusPes.pdb
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\NosSeusPes\ConsoleNosSeusPes\bin\Debug\ConsoleNosSeusPes.exe.config
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\NosSeusPes\ConsoleNosSeusPes\bin\Debug\ConsoleNosSeusPes.exe
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\NosSeusPes\ConsoleNosSeusPes\bin\Debug\ConsoleNosSeusPes.pdb
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\NosSeusPes\ConsoleNosSeusPes\bin\Debug\EntityFramework.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\NosSeusPes\ConsoleNosSeusPes\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\NosSeusPes\ConsoleNosSeusPes\bin\Debug\EntityFramework.xml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\NosSeusPes\ConsoleNosSeusPes\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\NosSeusPes\ConsoleNosSeusPes\obj\Debug\ConsoleNosSeusPes.csproj.CoreCompileInputs.cache
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\NosSeusPes\ConsoleNosSeusPes\obj\Debug\ConsoleNosSeusPes.csproj.CopyComplete
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\NosSeusPes\ConsoleNosSeusPes\obj\Debug\ConsoleNosSeusPes.exe
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\NosSeusPes\ConsoleNosSeusPes\obj\Debug\ConsoleNosSeusPes.pdb
