@@ -1,0 +1,15 @@
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\bin\Debug\bd.exe.config
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\bin\Debug\bd.exe
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\bin\Debug\bd.pdb
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\bin\Debug\EntityFramework.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\bin\Debug\SapatariaBiblioteca.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\bin\Debug\SapatariaBiblioteca.pdb
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\bin\Debug\SapatariaBiblioteca.dll.config
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\bin\Debug\EntityFramework.xml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\obj\Debug\bd.csprojAssemblyReference.cache
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\obj\Debug\bd.csproj.CoreCompileInputs.cache
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\obj\Debug\bd.csproj.CopyComplete
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\obj\Debug\bd.exe
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\bd\obj\Debug\bd.pdb

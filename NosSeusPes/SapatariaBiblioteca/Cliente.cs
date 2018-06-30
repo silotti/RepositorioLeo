@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SapatariaBiblioteca
 {
-    class Cliente
+    public class Cliente
     {
 
         [Key]

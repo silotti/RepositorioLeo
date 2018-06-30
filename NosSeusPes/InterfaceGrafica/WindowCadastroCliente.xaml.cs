@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SapatariaBiblioteca;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -24,7 +25,11 @@ namespace InterfaceGrafica
         public WindowCadastroCliente()
         {
             InitializeComponent();
+           
         }
+
+        Cliente clienteParaSalvar = new Cliente();
+        ModelSapato ctx = new ModelSapato();
 
         public Boolean ModoCriacaoCliente { get; set; } = false;
 
@@ -45,6 +50,10 @@ namespace InterfaceGrafica
         }
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
+            Cliente teste = new Cliente();
+            teste.nome = "Segundo";
+            ctx.BdClientes.Add(teste);
+            ctx.SaveChanges();
             this.Close();
         }
 

@@ -31,7 +31,6 @@ C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.xml
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csprojAssemblyReference.cache
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csproj.CoreCompileInputs.cache
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csproj.CopyComplete
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.dll
