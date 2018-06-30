@@ -52,6 +52,15 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="ClientePF.cs" />
     <Compile Include="ClientePJ.cs" />
+    <Compile Include="Migrations\201806300053418_v1.cs" />
+    <Compile Include="Migrations\201806300053418_v1.Designer.cs">
+      <DependentUpon>201806300053418_v1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806300058109_v2.cs" />
+    <Compile Include="Migrations\201806300058109_v2.Designer.cs">
+      <DependentUpon>201806300058109_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelSapato.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Item.cs" />
@@ -62,6 +71,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201806300053418_v1.resx">
+      <DependentUpon>201806300053418_v1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806300058109_v2.resx">
+      <DependentUpon>201806300058109_v2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
