@@ -46,7 +46,11 @@ namespace InterfaceGrafica
                 WindowGerarVenda window = new WindowGerarVenda();
                 window.ShowDialog();
             }
-            
+            //else if (sender == TipoCliente)
+            //{
+            //    WindowGerarVenda window = new WindowGerarVenda();
+            //    window.ShowDialog();
+            //}
 
 
         }

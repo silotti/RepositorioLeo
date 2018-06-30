@@ -21,11 +21,17 @@
             <RowDefinition/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Label>Nome:</Label>
-        <TextBox Grid.Column="1" Text="{Binding Path=clienteParaSalvar.nome}"></TextBox>
-        <Label Grid.Row="1">Número:</Label>
 
-       
+        <Label Grid.Row="0">IdCliente:</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=clienteParaSalvar.id_Cliente}"></TextBox>
+
+        <Label Grid.Row="1">Nome:</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=clienteParaSalvar.nome}"></TextBox>
+
+        <Label Grid.Row="2">Cliente é Revenda:</Label>
+
+        <CheckBox Grid.Row="2" Grid.Column="1" IsChecked="{Binding Path=clienteParaSalvar.revenda}" />
+
 
         <Button Grid.Row="5" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"
                 x:Name="OkButton" Click="OkButton_Click">Ok</Button>

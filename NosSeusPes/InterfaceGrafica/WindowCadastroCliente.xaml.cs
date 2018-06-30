@@ -27,14 +27,10 @@ namespace InterfaceGrafica
             InitializeComponent();
             this.DataContext = this;
         }
-
+        
         public Cliente clienteParaSalvar {get; set;} = new Cliente();
-
         ModelSapato ctx = new ModelSapato();
-
         public Boolean ModoCriacaoCliente { get; set; } = false;
-
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void NotifyPropertyChanged(string Property)
@@ -45,10 +41,19 @@ namespace InterfaceGrafica
             }
         }
 
+       // private void TipoCliente(object sender, RoutedEventArgs e)
+       //{
+       //     if (clienteParaSalvar.revenda == true)
+       //     {
+       //         MessageBox.Show("Do you wanna do something?");
+       //     }
+       // }
+
         private void CancelarButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
+
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
             //Cliente teste = new Cliente();
@@ -57,6 +62,8 @@ namespace InterfaceGrafica
             ctx.SaveChanges();
             this.Close();
         }
+
+
 
     }
 }

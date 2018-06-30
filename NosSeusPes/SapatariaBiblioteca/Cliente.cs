@@ -10,14 +10,10 @@ namespace SapatariaBiblioteca
 {
     public class Cliente
     {
-
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id_Cliente { get; set; }
-
         public String nome { get; set; }
-
         public Boolean revenda { get; set; }
-
     }
 }
