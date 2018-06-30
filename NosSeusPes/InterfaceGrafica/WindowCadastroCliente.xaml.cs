@@ -25,10 +25,11 @@ namespace InterfaceGrafica
         public WindowCadastroCliente()
         {
             InitializeComponent();
-           
+            this.DataContext = this;
         }
 
-        Cliente clienteParaSalvar = new Cliente();
+        public Cliente clienteParaSalvar {get; set;} = new Cliente();
+
         ModelSapato ctx = new ModelSapato();
 
         public Boolean ModoCriacaoCliente { get; set; } = false;
@@ -50,9 +51,9 @@ namespace InterfaceGrafica
         }
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-            Cliente teste = new Cliente();
-            teste.nome = "Segundo";
-            ctx.BdClientes.Add(teste);
+            //Cliente teste = new Cliente();
+            //teste.nome = "Segundo";
+            ctx.BdClientes.Add(clienteParaSalvar);
             ctx.SaveChanges();
             this.Close();
         }
