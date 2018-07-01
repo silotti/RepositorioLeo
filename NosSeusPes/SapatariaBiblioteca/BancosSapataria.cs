@@ -29,7 +29,6 @@ namespace SapatariaBiblioteca
         public virtual DbSet<Modelo> BdModelo { get; set; }
         public virtual DbSet<Pedido> BdPedido { get; set; }
         public virtual DbSet<Venda> BdVenda { get; set; }
-
     }
 
     //public class MyEntity

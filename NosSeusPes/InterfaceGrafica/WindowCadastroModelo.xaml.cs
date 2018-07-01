@@ -41,8 +41,6 @@ namespace InterfaceGrafica
             }
         }
 
-
-
         private void CancelarButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

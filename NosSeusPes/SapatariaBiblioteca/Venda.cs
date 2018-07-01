@@ -20,5 +20,6 @@ namespace SapatariaBiblioteca
         public Pedido tamanho { get; set; }
         public Pedido preco { get; set; }
         public Pedido precoTotal { get; set; }
+        public List<Pedido> pedidos1 { get; set; }
     }
 }

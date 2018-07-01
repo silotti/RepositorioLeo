@@ -15,5 +15,7 @@ namespace SapatariaBiblioteca
         public int id_Cliente { get; set; }
         public String nome { get; set; }
         public Boolean revenda { get; set; }
+        public List<Pedido> pedidos2 { get; set; }
+
     }
 }
