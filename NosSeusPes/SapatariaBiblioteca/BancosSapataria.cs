@@ -23,7 +23,12 @@ namespace SapatariaBiblioteca
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<Cliente> BdClientes { get; set; }
+        public virtual DbSet<ClientePF> BdClientesPF { get; set; }
+        public virtual DbSet<ClientePJ> BdClientesPJ { get; set; }
+        public virtual DbSet<Item> BdItem { get; set; }
         public virtual DbSet<Modelo> BdModelo { get; set; }
+        public virtual DbSet<Pedido> BdPedido { get; set; }
+        public virtual DbSet<Venda> BdVenda { get; set; }
 
     }
 
