@@ -18,6 +18,6 @@ namespace SapatariaBiblioteca
         public String material { get; set; }
         public String cor { get; set; }
         public float preco { get; set; }
-        public String fotografias { get; set; }
+        public List<Item> itens { get; set; }
     }
 }
