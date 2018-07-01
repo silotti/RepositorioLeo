@@ -12,7 +12,7 @@ namespace SapatariaBiblioteca
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Cliente id_Cliente { get; set; }
+        public int id_Cliente { get; set; }
         public int CPF { get; set; }
         public DateTime data_Nasc { get; set; }
     }

@@ -9,7 +9,8 @@ namespace SapatariaBiblioteca.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(SapatariaBiblioteca.BancosSapataria context)
