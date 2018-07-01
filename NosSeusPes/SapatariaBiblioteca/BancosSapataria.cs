@@ -4,7 +4,7 @@ namespace SapatariaBiblioteca
     using System.Data.Entity;
     using System.Linq;
 
-    public class ModelSapato : DbContext
+    public class BancosSapataria : DbContext
     {
 
 
@@ -14,8 +14,8 @@ namespace SapatariaBiblioteca
         // 
         // If you wish to target a different database and/or database provider, modify the 'ModelSapato' 
         // connection string in the application configuration file.
-        public ModelSapato()
-            : base("name=ModelSapato")
+        public BancosSapataria()
+            : base("name=BancosSapataria")
         {
         }
 
@@ -23,6 +23,8 @@ namespace SapatariaBiblioteca
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<Cliente> BdClientes { get; set; }
+        public virtual DbSet<Modelo> BdModelo { get; set; }
+
     }
 
     //public class MyEntity

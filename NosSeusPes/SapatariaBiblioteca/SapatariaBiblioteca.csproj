@@ -60,8 +60,12 @@
     <Compile Include="Migrations\201806300058109_v2.Designer.cs">
       <DependentUpon>201806300058109_v2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807011442088_v3.cs" />
+    <Compile Include="Migrations\201807011442088_v3.Designer.cs">
+      <DependentUpon>201807011442088_v3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="ModelSapato.cs" />
+    <Compile Include="BancosSapataria.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Modelo.cs" />
@@ -78,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806300058109_v2.resx">
       <DependentUpon>201806300058109_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807011442088_v3.resx">
+      <DependentUpon>201807011442088_v3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -29,7 +29,7 @@ namespace InterfaceGrafica
         }
         
         public Cliente clienteParaSalvar {get; set;} = new Cliente();
-        ModelSapato ctx = new ModelSapato();
+        BancosSapataria ctx = new BancosSapataria();
         public Boolean ModoCriacaoCliente { get; set; } = false;
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -48,7 +48,7 @@ namespace InterfaceGrafica
        //         MessageBox.Show("Do you wanna do something?");
        //     }
        // }
-
+    
         private void CancelarButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

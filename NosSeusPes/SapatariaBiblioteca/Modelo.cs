@@ -11,18 +11,11 @@ namespace SapatariaBiblioteca
     {
         [Key]
         public int id_Modelo { get; set; }
-
         public String nome { get; set; }
-
         public Boolean cadarco { get; set; }
-
         public String material { get; set; }
-
         public String cor { get; set; }
-
         public float preco { get; set; }
-
         public String fotografias { get; set; }
-
     }
 }

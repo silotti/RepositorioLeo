@@ -11,13 +11,9 @@ namespace SapatariaBiblioteca
     {
         [Key]
         public int id_Item { get; set; }
-
         public Modelo id_Modelo { get; set; }
-
         public String nome { get; set; }
-
         public int tamanho { get; set; }
-
         public int quantidade { get; set; }
     }
 }
