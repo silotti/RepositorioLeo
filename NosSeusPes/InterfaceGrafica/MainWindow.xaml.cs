@@ -31,7 +31,7 @@ namespace InterfaceGrafica
                 WindowCadastroModelo window = new WindowCadastroModelo();
                 window.ShowDialog();
             }
-            else if (sender == MenuNovoItem)
+            else if (sender == MenuNovoEstoque)
             {
                 WindowCadastroItem window = new WindowCadastroItem();
                 window.ShowDialog();
