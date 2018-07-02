@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\App.xaml
-5433644481
+6463895172
 
-131182588600
+141526382029
 18239755392
-MainWindow.xaml;WindowCadastroCliente.xaml;WindowCadastroModelo.xaml;WindowCadastroPedido.xaml;WindowGerarVenda.xaml;
+MainWindow.xaml;WindowCadastroItem.xaml;WindowCadastroCliente.xaml;WindowCadastroModelo.xaml;WindowCadastroPedido.xaml;WindowGerarVenda.xaml;
 
-False
+True
 

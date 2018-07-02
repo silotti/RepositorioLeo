@@ -11,17 +11,21 @@
 
             <MenuItem Header="Cadastro">
                 <MenuItem
-                    x:Name="MenuModelo"
+                    x:Name="MenuNovoModelo"
                     Click="MenuItem_Click"
                     Header="Modelos"/>
+                <MenuItem
+                    x:Name="MenuNovoItem"
+                    Click="MenuItem_Click"
+                    Header="Itens"/>
                 <MenuItem 
                     x:Name="MenuNovoPedido"
                     Click="MenuItem_Click"
-                    Header="Pedido"/>
+                    Header="Pedidos"/>
                 <MenuItem 
                     x:Name="MenuNovoCliente"
                     Click="MenuItem_Click"
-                    Header="Cliente"/>
+                    Header="Clientes"/>
             </MenuItem>
             
             <MenuItem Header="Venda">

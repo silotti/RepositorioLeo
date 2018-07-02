@@ -90,3 +90,5 @@ C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.csproj.CopyComplete
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.exe
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\InterfaceGrafica.pdb
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\WindowCadastroItem.g.cs
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\WindowCadastroItem.baml

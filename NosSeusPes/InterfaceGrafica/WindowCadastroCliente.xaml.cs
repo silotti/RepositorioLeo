@@ -58,7 +58,7 @@ namespace InterfaceGrafica
         {
             //Cliente teste = new Cliente();
             //teste.nome = "Segundo";
-            ctx.BdClientes.Add(clienteParaSalvar);
+            ctx.BdCliente.Add(clienteParaSalvar);
             ctx.SaveChanges();
             this.Close();
         }

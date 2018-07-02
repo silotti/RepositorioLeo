@@ -1,4 +1,4 @@
-﻿<Window x:Class="InterfaceGrafica.WindowCadastroCliente"
+﻿<Window x:Class="InterfaceGrafica.WindowCadastroItem"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:InterfaceGrafica"
         mc:Ignorable="d"
         xmlns:System="clr-namespace:System;assembly=mscorlib"
-        Title="WindowCadastroCliente" Height="450" Width="800">
+        Title="WindowCadastroItem" Height="450" Width="800">
 
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
@@ -22,18 +22,19 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0">IdCliente:</Label>
-        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=clienteParaSalvar.id_Cliente}"></TextBox>
+        <Label Grid.Row="0">IdItem:</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=itemParaSalvar.id_Item}"></TextBox>
 
         <Label Grid.Row="1">Nome:</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=clienteParaSalvar.nome}"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=itemParaSalvar.nome}"></TextBox>
 
-        <Label Grid.Row="2">Cliente é Revenda:</Label>
+        <Label Grid.Row="2">Tamanho:</Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=itemParaSalvar.tamanho}"></TextBox>
 
-        <CheckBox Grid.Row="2" Grid.Column="1" IsChecked="{Binding Path=clienteParaSalvar.revenda}" />
+        <Label Grid.Row="3">Quantidade:</Label>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=itemParaSalvar.quantidade}"></TextBox>
 
 
-        
         <Button Grid.Row="5" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"
                 x:Name="OkButton" Click="OkButton_Click">Ok</Button>
         <Button Grid.Row="5" Grid.Column="1" Width="100" Margin="20" HorizontalAlignment="Left"

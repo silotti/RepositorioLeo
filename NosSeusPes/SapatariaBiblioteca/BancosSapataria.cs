@@ -22,7 +22,7 @@ namespace SapatariaBiblioteca
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
-        public virtual DbSet<Cliente> BdClientes { get; set; }
+        public virtual DbSet<Cliente> BdCliente { get; set; }
         public virtual DbSet<ClientePF> BdClientesPF { get; set; }
         public virtual DbSet<ClientePJ> BdClientesPJ { get; set; }
         public virtual DbSet<Item> BdItem { get; set; }

@@ -19,18 +19,18 @@ namespace InterfaceGrafica
     /// <summary>
     /// Interaction logic for WindowCadastroModelo.xaml
     /// </summary>
-    public partial class WindowCadastroModelo : Window,
+    public partial class WindowCadastroItem : Window,
         INotifyPropertyChanged
     {
-        public WindowCadastroModelo()
+        public WindowCadastroItem()
         {
             InitializeComponent();
             this.DataContext = this;
         }
 
-        public Modelo modeloParaSalvar { get; set; } = new Modelo();
+        public Item itemParaSalvar { get; set; } = new Item();
         BancosSapataria ctx = new BancosSapataria();
-        public Boolean ModoCriacaoModelo { get; set; } = false;
+        public Boolean ModoCriacaoItem { get; set; } = false;
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void NotifyPropertyChanged(string Property)
@@ -49,7 +49,7 @@ namespace InterfaceGrafica
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
 
-            ctx.BdModelo.Add(modeloParaSalvar);
+            ctx.BdItem.Add(itemParaSalvar);
             ctx.SaveChanges();
             this.Close();
         }
