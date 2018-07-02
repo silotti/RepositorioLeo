@@ -5,29 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InterfaceGrafica"
         mc:Ignorable="d"
-        Title="Cadastro do Pedido" Height="450" Width="800">
-    <Grid Margin="15">
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        Title="WindowCadastroPedido" Height="450" Width="800">
+
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
 
-        <Label Grid.Row="0">Id:</Label>
-        <Label Grid.Row="1">Nome:</Label>
-        <Label Grid.Row="2">Fundação:</Label>
+        <Label Grid.Row="0">IdPedido:</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=pedidoParaSalvar.id_Pedido}"></TextBox>
 
-        <Button Grid.Row="4" Width="70" x:Name="OkButton"
-                Click="OkButton_Click"
-                Margin="10">Ok</Button>
+        <Label Grid.Row="1">IdCliente:</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=pedidoParaSalvar.id_Cliente}"></TextBox>
+ 
+        <Label Grid.Row="2">Quantidade:</Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=pedidoParaSalvar.quantidade}"></TextBox>
 
-        <Button Grid.Row="4" Grid.Column="1"  x:Name="CancelarButton" Click="CancelarButton_Click"
-                Width="70" Margin="10">Cancelar</Button>
+        <Label Grid.Row="3">Preco Total:</Label>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=pedidoParaSalvar.precoTotal}"></TextBox>
+
+
+        <Button Grid.Row="5" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"
+                x:Name="OkButton" Click="OkButton_Click">Ok</Button>
+        <Button Grid.Row="5" Grid.Column="1" Width="100" Margin="20" HorizontalAlignment="Left"
+                x:Name="CancelarButton" Click="CancelarButton_Click">Cancelar</Button>
+
+
+
     </Grid>
 </Window>

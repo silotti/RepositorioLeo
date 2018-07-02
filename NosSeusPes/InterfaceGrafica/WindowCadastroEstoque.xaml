@@ -1,4 +1,4 @@
-﻿<Window x:Class="InterfaceGrafica.WindowCadastroItem"
+﻿<Window x:Class="InterfaceGrafica.WindowCadastroEstoque"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:InterfaceGrafica"
         mc:Ignorable="d"
         xmlns:System="clr-namespace:System;assembly=mscorlib"
-        Title="WindowCadastroItem" Height="450" Width="800">
+        Title="WindowCadastroEstoque" Height="450" Width="800">
 
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
@@ -22,17 +22,17 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0">IdItem:</Label>
-        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=itemParaSalvar.id_Item}"></TextBox>
+        <Label Grid.Row="0">IdEstoque:</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=estoqueParaSalvar.id_Estoque}"></TextBox>
 
         <Label Grid.Row="1">Nome:</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=itemParaSalvar.nome}"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=estoqueParaSalvar.nome}"></TextBox>
 
         <Label Grid.Row="2">Tamanho:</Label>
-        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=itemParaSalvar.tamanho}"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=estoqueParaSalvar.tamanho}"></TextBox>
 
         <Label Grid.Row="3">Quantidade:</Label>
-        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=itemParaSalvar.quantidade}"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=estoqueParaSalvar.quantidade}"></TextBox>
 
 
         <Button Grid.Row="5" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"

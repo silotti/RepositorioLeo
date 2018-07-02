@@ -18,7 +18,7 @@ namespace SapatariaBiblioteca
 
         public int precoTotal { get; set; }
 
-        public List<Item> itens2 { get; set; }
+        public List<Estoque> itens2 { get; set; }
         [ForeignKey("id_Cliente")]
         [InverseProperty("pedidos2")]
         public Cliente cliente { get; set; }

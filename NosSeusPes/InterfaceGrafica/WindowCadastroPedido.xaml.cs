@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SapatariaBiblioteca;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -24,20 +25,12 @@ namespace InterfaceGrafica
         public WindowCadastroPedido()
         {
             InitializeComponent();
+            this.DataContext = this;
         }
+
+        public Pedido pedidoParaSalvar { get; set; } = new Pedido();
+        BancosSapataria ctx = new BancosSapataria();
         public Boolean ModoCriacaoPedido { get; set; } = false;
-
-        public Visibility VisibilidadeDataGrid
-        {
-            get
-            {
-                if (ModoCriacaoPedido) { return Visibility.Hidden; }
-                else { return Visibility.Visible; }
-            }
-        }
-
-
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void NotifyPropertyChanged(string Property)
@@ -52,9 +45,16 @@ namespace InterfaceGrafica
         {
             this.Close();
         }
+
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
+
+            ctx.BdPedido.Add(pedidoParaSalvar);
+            ctx.SaveChanges();
             this.Close();
         }
+
+
+
     }
 }

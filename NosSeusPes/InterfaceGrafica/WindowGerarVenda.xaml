@@ -5,29 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InterfaceGrafica"
         mc:Ignorable="d"
-        Title="Localizar Pedido e Gerar a Venda" Height="300" Width="300">
-    <Grid Margin="15">
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        Title="WindowGerarVenda" Height="450" Width="800">
+
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
 
-        <Label Grid.Row="0">Id:</Label>
-        <Label Grid.Row="1">Nome:</Label>
-        <Label Grid.Row="2">Fundação:</Label>
+        <Label Grid.Row="0">IdVenda:</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=vendaParaSalvar.id_Venda}"></TextBox>
 
-        <Button Grid.Row="4" Width="70" x:Name="OkButton"
-                Click="OkButton_Click"
-                Margin="10">Ok</Button>
+        <Label Grid.Row="1">IdPedido:</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=vendaParaSalvar.id_Pedido}"></TextBox>
 
-        <Button Grid.Row="4" Grid.Column="1"  x:Name="CancelarButton" Click="CancelarButton_Click"
-                Width="70" Margin="10">Cancelar</Button>
+
+
+
+        <Button Grid.Row="5" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"
+                x:Name="OkButton" Click="OkButton_Click">Ok</Button>
+        <Button Grid.Row="5" Grid.Column="1" Width="100" Margin="20" HorizontalAlignment="Left"
+                x:Name="CancelarButton" Click="CancelarButton_Click">Cancelar</Button>
+
+
+
     </Grid>
 </Window>

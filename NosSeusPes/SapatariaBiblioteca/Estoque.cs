@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace SapatariaBiblioteca
 {
-    public class Item
+    public class Estoque
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id_Item { get; set; }
+        public int id_Estoque { get; set; }
         public int id_Modelo { get; set; }
         [ForeignKey("id_Modelo")]
         [InverseProperty("itens1")]

@@ -28,6 +28,8 @@
         <Label Grid.Row="1">Nome:</Label>
         <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.nome}"></TextBox>
 
+        
+        
  
         <Button Grid.Row="5" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"
                 x:Name="OkButton" Click="OkButton_Click">Ok</Button>

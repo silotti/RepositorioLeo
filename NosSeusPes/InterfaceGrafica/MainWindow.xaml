@@ -27,14 +27,14 @@
                     Click="MenuItem_Click"
                     Header="Clientes"/>
             </MenuItem>
-
+            
             <MenuItem Header="Venda">
                 <MenuItem 
                     x:Name="MenuGerarVenda"
                     Click="MenuItem_Click"
                     Header="Gerar"/>
             </MenuItem>
-
+            
         </Menu>
     </Grid>
 </Window>

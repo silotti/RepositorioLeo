@@ -17,18 +17,18 @@ using System.Windows.Shapes;
 namespace InterfaceGrafica
 {
     /// <summary>
-    /// Interaction logic for WindowCadastroModelo.xaml
+    /// Interaction logic for WindowCadastroEstoque.xaml
     /// </summary>
-    public partial class WindowCadastroItem : Window,
+    public partial class WindowCadastroEstoque : Window,
         INotifyPropertyChanged
     {
-        public WindowCadastroItem()
+        public WindowCadastroEstoque()
         {
             InitializeComponent();
             this.DataContext = this;
         }
 
-        public Item itemParaSalvar { get; set; } = new Item();
+        public Estoque estoqueParaSalvar { get; set; } = new Estoque();
         BancosSapataria ctx = new BancosSapataria();
         public Boolean ModoCriacaoItem { get; set; } = false;
         public event PropertyChangedEventHandler PropertyChanged;
@@ -49,7 +49,7 @@ namespace InterfaceGrafica
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
 
-            ctx.BdItem.Add(itemParaSalvar);
+            ctx.BdEstoque.Add(estoqueParaSalvar);
             ctx.SaveChanges();
             this.Close();
         }

@@ -18,7 +18,7 @@ namespace SapatariaBiblioteca
         public String material { get; set; }
         public String cor { get; set; }
         public float preco { get; set; }
-        public List<Item> itens1 { get; set; }
+        public List<Estoque> itens1 { get; set; }
 
     }
 }

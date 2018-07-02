@@ -41,6 +41,7 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -62,8 +63,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="WindowCadastroItem.xaml.cs">
-      <DependentUpon>WindowCadastroItem.xaml</DependentUpon>
+    <Compile Include="WindowCadastroEstoque.xaml.cs">
+      <DependentUpon>WindowCadastroEstoque.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowCadastroCliente.xaml.cs">
       <DependentUpon>WindowCadastroCliente.xaml</DependentUpon>
@@ -89,7 +90,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="WindowCadastroItem.xaml">
+    <Page Include="WindowCadastroEstoque.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

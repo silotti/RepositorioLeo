@@ -33,7 +33,7 @@ namespace InterfaceGrafica
             }
             else if (sender == MenuNovoEstoque)
             {
-                WindowCadastroItem window = new WindowCadastroItem();
+                WindowCadastroEstoque window = new WindowCadastroEstoque();
                 window.ShowDialog();
             }
             else if (sender == MenuNovoPedido)

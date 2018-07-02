@@ -33,7 +33,7 @@
         <CheckBox Grid.Row="2" Grid.Column="1" IsChecked="{Binding Path=clienteParaSalvar.revenda}" />
 
 
-
+        
         <Button Grid.Row="5" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"
                 x:Name="OkButton" Click="OkButton_Click">Ok</Button>
         <Button Grid.Row="5" Grid.Column="1" Width="100" Margin="20" HorizontalAlignment="Left"
@@ -43,4 +43,3 @@
 
     </Grid>
 </Window>
-    
