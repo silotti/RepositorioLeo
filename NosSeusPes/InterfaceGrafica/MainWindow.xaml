@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InterfaceGrafica"
         mc:Ignorable="d"
-        Title="NosSeusPes Calçados" Height="400" Width="300">
+        Title="NosSeusPes Calçados" Height="400" Width="500">
     <Grid Margin="0,0,22,138" RenderTransformOrigin="0.481,0.368">
         <Menu Margin="10,10,-10,141" RenderTransformOrigin="0.396,1.458">
 
             <MenuItem Header="Cadastro">
+                <MenuItem 
+                    x:Name="MenuNovoCliente"
+                    Click="MenuItem_Click"
+                    Header="Clientes"/>
                 <MenuItem
                     x:Name="MenuNovoModelo"
                     Click="MenuItem_Click"
@@ -22,10 +26,6 @@
                     x:Name="MenuNovoPedido"
                     Click="MenuItem_Click"
                     Header="Pedidos"/>
-                <MenuItem 
-                    x:Name="MenuNovoCliente"
-                    Click="MenuItem_Click"
-                    Header="Clientes"/>
             </MenuItem>
             
             <MenuItem Header="Venda">

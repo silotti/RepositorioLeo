@@ -57,6 +57,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\SapatariaBiblioteca\SapatariaBiblioteca.csproj">
       <Project>{63b7deaf-3ff3-4ab9-86c2-2b5a55833a9f}</Project>
       <Name>SapatariaBiblioteca</Name>

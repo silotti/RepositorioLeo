@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:InterfaceGrafica"
         mc:Ignorable="d"
         xmlns:System="clr-namespace:System;assembly=mscorlib"
-        Title="WindowGerarVenda" Height="450" Width="800">
+        Title="WindowGerarVenda" Height="380" Width="600">
 
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
@@ -14,26 +14,29 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0">IdVenda:</Label>
-        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=vendaParaSalvar.id_Venda}"></TextBox>
+        <Label Grid.Row="1">IdVenda:</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=vendaParaSalvar.id_Venda}"></TextBox>
 
-        <Label Grid.Row="1">IdPedido:</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=vendaParaSalvar.id_Pedido}"></TextBox>
-
-
+        <Label Grid.Row="2">IdPedido:</Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=vendaParaSalvar.id_Pedido}"></TextBox>
 
 
-        <Button Grid.Row="5" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"
+
+
+        <Button Grid.Row="7" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"
                 x:Name="OkButton" Click="OkButton_Click">Ok</Button>
-        <Button Grid.Row="5" Grid.Column="1" Width="100" Margin="20" HorizontalAlignment="Left"
+        <Button Grid.Row="7" Grid.Column="1" Width="100" Margin="20" HorizontalAlignment="Left"
                 x:Name="CancelarButton" Click="CancelarButton_Click">Cancelar</Button>
 
 

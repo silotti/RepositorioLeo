@@ -28,7 +28,7 @@ namespace InterfaceGrafica
             this.DataContext = this;
         }
 
-        public Venda vendaParaSalvar { get; set; } = new Venda();
+        public Venda VendaParaSalvar { get; set; } = new Venda();
         BancosSapataria ctx = new BancosSapataria();
         public Boolean ModoCriacaoVenda { get; set; } = false;
         public event PropertyChangedEventHandler PropertyChanged;
@@ -49,7 +49,7 @@ namespace InterfaceGrafica
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
 
-            ctx.BdVenda.Add(vendaParaSalvar);
+            ctx.BdVenda.Add(VendaParaSalvar);
             ctx.SaveChanges();
             this.Close();
         }

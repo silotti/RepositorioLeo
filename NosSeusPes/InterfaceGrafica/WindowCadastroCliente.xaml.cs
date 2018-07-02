@@ -28,7 +28,7 @@ namespace InterfaceGrafica
             this.DataContext = this;
         }
         
-        public Cliente clienteParaSalvar {get; set;} = new Cliente();
+        public Cliente ClienteParaSalvar { get; set;} = new Cliente();
         BancosSapataria ctx = new BancosSapataria();
         public Boolean ModoCriacaoCliente { get; set; } = false;
         public event PropertyChangedEventHandler PropertyChanged;
@@ -58,7 +58,7 @@ namespace InterfaceGrafica
         {
             //Cliente teste = new Cliente();
             //teste.nome = "Segundo";
-            ctx.BdCliente.Add(clienteParaSalvar);
+            ctx.BdCliente.Add(ClienteParaSalvar);
             ctx.SaveChanges();
             this.Close();
         }

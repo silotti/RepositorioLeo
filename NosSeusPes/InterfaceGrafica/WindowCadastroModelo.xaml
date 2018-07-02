@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:InterfaceGrafica"
         mc:Ignorable="d"
         xmlns:System="clr-namespace:System;assembly=mscorlib"
-        Title="WindowCadastroModelo" Height="450" Width="800">
+        Title="WindowCadastroModelo" Height="380" Width="600">
 
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
@@ -14,26 +14,43 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0">IdModelo:</Label>
-        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.id_Modelo}"></TextBox>
+        <Label Grid.Row="1">IdModelo:</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.id_Modelo}"></TextBox>
 
-        <Label Grid.Row="1">Nome:</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.nome}"></TextBox>
+        <Label Grid.Row="2">Nome:</Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.nome}"></TextBox>
 
-        
-        
- 
-        <Button Grid.Row="5" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"
+        <Label Grid.Row="3">Cadarco:</Label>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.cadarco}"></TextBox>
+
+        <Label Grid.Row="4">Material:</Label>
+        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.material}"></TextBox>
+
+        <Label Grid.Row="5">Cor:</Label>
+        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.cor}"></TextBox>
+
+        <Label Grid.Row="6">Tamanho:</Label>
+        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.cor}"></TextBox>
+
+        <Label Grid.Row="7">Preço:</Label>
+        <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.preco}"></TextBox>
+
+
+            <Button Grid.Row="9" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"
                 x:Name="OkButton" Click="OkButton_Click">Ok</Button>
-        <Button Grid.Row="5" Grid.Column="1" Width="100" Margin="20" HorizontalAlignment="Left"
+        <Button Grid.Row="9" Grid.Column="1" Width="100" Margin="20" HorizontalAlignment="Left"
                 x:Name="CancelarButton" Click="CancelarButton_Click">Cancelar</Button>
 
 
