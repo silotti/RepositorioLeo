@@ -22,15 +22,17 @@ namespace InterfaceGrafica
     public partial class WindowCadastroCliente : Window,
         INotifyPropertyChanged
     {
+
+        BancosSapataria ctx = new BancosSapataria();
+        public Cliente clienteParaSalvar = new Cliente();
+        public Boolean ModoCriacaoCliente { get; set; } = false;
+
         public WindowCadastroCliente()
         {
             InitializeComponent();
             this.DataContext = this;
         }
-        
-        public Cliente ClienteParaSalvar { get; set;} = new Cliente();
-        BancosSapataria ctx = new BancosSapataria();
-        public Boolean ModoCriacaoCliente { get; set; } = false;
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void NotifyPropertyChanged(string Property)
@@ -58,7 +60,7 @@ namespace InterfaceGrafica
         {
             //Cliente teste = new Cliente();
             //teste.nome = "Segundo";
-            ctx.BdCliente.Add(ClienteParaSalvar);
+            ctx.BdCliente.Add(clienteParaSalvar);
             ctx.SaveChanges();
             this.Close();
         }

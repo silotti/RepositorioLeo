@@ -28,7 +28,7 @@ namespace InterfaceGrafica
             this.DataContext = this;
         }
 
-        public Estoque EstoqueParaSalvar { get; set; } = new Estoque();
+        //public Estoque estoqueParaSalvar { get; set; } = new Estoque();
         BancosSapataria ctx = new BancosSapataria();
         public Boolean ModoCriacaoEstoque { get; set; } = false;
         public event PropertyChangedEventHandler PropertyChanged;
@@ -49,8 +49,8 @@ namespace InterfaceGrafica
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
 
-            ctx.BdEstoque.Add(EstoqueParaSalvar);
-            ctx.SaveChanges();
+            //ctx.BdEstoque.Add(estoqueParaSalvar);
+            //ctx.SaveChanges();
             this.Close();
         }
 

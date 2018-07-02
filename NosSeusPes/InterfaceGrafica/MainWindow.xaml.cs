@@ -26,7 +26,12 @@ namespace InterfaceGrafica
         }
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            if (sender == MenuNovoModelo)
+            if (sender == MenuNovoCliente)
+            {
+                WindowCadastroCliente window = new WindowCadastroCliente();
+                window.ShowDialog();
+            }
+            else if (sender == MenuNovoModelo)
             {
                 WindowCadastroModelo window = new WindowCadastroModelo();
                 window.ShowDialog();
@@ -41,11 +46,7 @@ namespace InterfaceGrafica
                 WindowCadastroPedido window = new WindowCadastroPedido();
                 window.ShowDialog();
             }
-            else if (sender == MenuNovoCliente)
-            {
-                WindowCadastroCliente window = new WindowCadastroCliente();
-                window.ShowDialog();
-            }
+
             else if (sender == MenuGerarVenda)
             {
                 WindowGerarVenda window = new WindowGerarVenda();

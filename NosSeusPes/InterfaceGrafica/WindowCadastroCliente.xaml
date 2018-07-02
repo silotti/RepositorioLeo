@@ -35,13 +35,13 @@
         <CheckBox Grid.Row="3" Grid.Column="1" IsChecked="{Binding Path=clienteParaSalvar.revenda}" />
 
         <Label Grid.Row="4">CPF/CNPJ:</Label>
-        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=pedidoParaSalvar.quantidade}"></TextBox>
+        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=clienteParaSalvar.cpf_cnpj}"></TextBox>
 
         <Label Grid.Row="5">DataNascimento/Razao:</Label>
-        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=pedidoParaSalvar.precoTotal}"></TextBox>
+        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=clienteParaSalvar.data_razao}"></TextBox>
 
         <Label Grid.Row="6">EndereçoPF/EndereçoPJ:</Label>
-        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=pedidoParaSalvar.precoTotal}"></TextBox>
+        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=clienteParaSalvar.enderecoPF_PJ}"></TextBox>
 
 
         <Button Grid.Row="7" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"

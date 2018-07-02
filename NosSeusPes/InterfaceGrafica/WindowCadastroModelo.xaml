@@ -42,7 +42,7 @@
         <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.cor}"></TextBox>
 
         <Label Grid.Row="6">Tamanho:</Label>
-        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.cor}"></TextBox>
+        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.tamanho}"></TextBox>
 
         <Label Grid.Row="7">Preço:</Label>
         <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.preco}"></TextBox>

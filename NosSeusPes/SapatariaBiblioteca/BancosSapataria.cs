@@ -25,8 +25,8 @@ namespace SapatariaBiblioteca
         public virtual DbSet<Cliente> BdCliente { get; set; }
         public virtual DbSet<ClientePF> BdClientesPF { get; set; }
         public virtual DbSet<ClientePJ> BdClientesPJ { get; set; }
-        public virtual DbSet<Estoque> BdEstoque { get; set; }
         public virtual DbSet<Modelo> BdModelo { get; set; }
+        public virtual DbSet<Estoque> BdEstoque { get; set; }
         public virtual DbSet<Pedido> BdPedido { get; set; }
         public virtual DbSet<Venda> BdVenda { get; set; }
     }

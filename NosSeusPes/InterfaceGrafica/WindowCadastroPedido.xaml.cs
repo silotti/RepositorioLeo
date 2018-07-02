@@ -28,7 +28,7 @@ namespace InterfaceGrafica
             this.DataContext = this;
         }
 
-        public Pedido PedidoParaSalvar { get; set; } = new Pedido();
+        //public Pedido pedidoParaSalvar { get; set; } = new Pedido();
         BancosSapataria ctx = new BancosSapataria();
         public Boolean ModoCriacaoPedido { get; set; } = false;
         public event PropertyChangedEventHandler PropertyChanged;
@@ -49,8 +49,8 @@ namespace InterfaceGrafica
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
 
-            ctx.BdPedido.Add(PedidoParaSalvar);
-            ctx.SaveChanges();
+            //ctx.BdPedido.Add(pedidoParaSalvar);
+            //ctx.SaveChanges();
             this.Close();
         }
 
