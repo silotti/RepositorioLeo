@@ -27,8 +27,8 @@ namespace InterfaceGrafica
             InitializeComponent();
             this.DataContext = this;
         }
-        
-        public Cliente clienteParaSalvar {get; set;} = new Cliente();
+
+        public Cliente clienteParaSalvar { get; set; } = new Cliente();
         BancosSapataria ctx = new BancosSapataria();
         public Boolean ModoCriacaoCliente { get; set; } = false;
         public event PropertyChangedEventHandler PropertyChanged;
@@ -41,14 +41,14 @@ namespace InterfaceGrafica
             }
         }
 
-       // private void TipoCliente(object sender, RoutedEventArgs e)
-       //{
-       //     if (clienteParaSalvar.revenda == true)
-       //     {
-       //         MessageBox.Show("Do you wanna do something?");
-       //     }
-       // }
-    
+        // private void TipoCliente(object sender, RoutedEventArgs e)
+        //{
+        //     if (clienteParaSalvar.revenda == true)
+        //     {
+        //         MessageBox.Show("Do you wanna do something?");
+        //     }
+        // }
+
         private void CancelarButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
