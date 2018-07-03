@@ -10,9 +10,9 @@ namespace SapatariaBiblioteca
 {
     public class Pedido
     {
-        [Key]
+        //[Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id_Pedido { get; set; }
+        //public int id_Pedido { get; set; }
         //public int id_Cliente { get; set; }
         //public int quantidade { get; set; }
 

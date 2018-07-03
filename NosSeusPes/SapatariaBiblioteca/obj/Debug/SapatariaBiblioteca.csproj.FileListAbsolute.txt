@@ -27,8 +27,6 @@ C:\Users\Giovano\Desktop\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBibli
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csprojAssemblyReference.cache
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.Migrations.v1.resources
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.Migrations.v2.resources
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.Migrations.v3.resources
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.Migrations.v4.resources
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csproj.GenerateResource.cache
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csproj.CoreCompileInputs.cache
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\SapatariaBiblioteca.dll.config

@@ -10,9 +10,9 @@ namespace SapatariaBiblioteca
 {
     public class Modelo
     {
-        [Key]
+        //[Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id_Modelo { get; set; }
+        //public int id_Modelo { get; set; }
         //public String nome { get; set; }
         //public Boolean cadarco { get; set; }
         //public String material { get; set; }

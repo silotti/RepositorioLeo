@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace SapatariaBiblioteca
 {
-    public class ClientePJ : Cliente
+    public class ClientePJ //: Cliente
     {
-        [Key]
+        //[Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id_ClientePJ { get; set; }
+        //public int id_ClientePJ { get; set; }
         //public String razao { get; set; }
         //public int CNPJ { get; set; }
         //public String endereco { get; set; }
