@@ -10,10 +10,10 @@ namespace SapatariaBiblioteca
 {
     public class ClientePF //: Cliente
     {
-        //[Key]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        //public int id_ClientePF { get; set; }
-        //public int CPF { get; set; }
-        //public DateTime data_Nasc { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int id_ClientePF { get; set; }
+        public int CPF { get; set; }
+        public DateTime data_Nasc { get; set; }
     }
 }

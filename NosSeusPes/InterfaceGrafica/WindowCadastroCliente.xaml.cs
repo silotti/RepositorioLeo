@@ -40,14 +40,6 @@ namespace InterfaceGrafica
                 PropertyChanged(this, new PropertyChangedEventArgs(Property));
             }
         }
-
-       // private void TipoCliente(object sender, RoutedEventArgs e)
-       //{
-       //     if (clienteParaSalvar.revenda == true)
-       //     {
-       //         MessageBox.Show("Do you wanna do something?");
-       //     }
-       // }
     
         private void CancelarButton_Click(object sender, RoutedEventArgs e)
         {
@@ -56,14 +48,9 @@ namespace InterfaceGrafica
 
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-            //Cliente teste = new Cliente();
-            //teste.nome = "Segundo";
             ctx.BdCliente.Add(clienteParaSalvar);
             ctx.SaveChanges();
             this.Close();
         }
-
-
-
     }
 }
