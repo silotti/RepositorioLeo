@@ -48,7 +48,6 @@ namespace InterfaceGrafica
 
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-
             ctx.BdEstoque.Add(estoqueParaSalvar);
             ctx.SaveChanges();
             this.Close();

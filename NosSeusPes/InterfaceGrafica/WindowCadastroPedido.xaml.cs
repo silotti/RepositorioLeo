@@ -48,13 +48,9 @@ namespace InterfaceGrafica
 
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-
             ctx.BdPedido.Add(pedidoParaSalvar);
             ctx.SaveChanges();
             this.Close();
         }
-
-
-
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SapatariaBiblioteca
 {
-    public class ClientePF //: Cliente
+    public class ClientePF : Cliente
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
