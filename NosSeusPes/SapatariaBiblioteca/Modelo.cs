@@ -10,15 +10,15 @@ namespace SapatariaBiblioteca
 {
     public class Modelo
     {
-        //[Key]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        //public int id_Modelo { get; set; }
-        //public String nome { get; set; }
-        //public Boolean cadarco { get; set; }
-        //public String material { get; set; }
-        //public String cor { get; set; }
-        //public String tamanho { get; set; }
-        //public float preco { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int id_Modelo { get; set; }
+        public String nome { get; set; }
+        public Boolean cadarco { get; set; }
+        public String material { get; set; }
+        public String cor { get; set; }
+        public String tamanho { get; set; }
+        public float preco { get; set; }
         //public List<Estoque> itens1 { get; set; }
 
     }

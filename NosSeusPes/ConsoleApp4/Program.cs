@@ -13,8 +13,11 @@ namespace ConsoleApp4
         {
             BancosSapataria ctx = new BancosSapataria();
             Cliente cliente = new Cliente();
+            //Modelo modelo = new Modelo();
             ctx.BdCliente.Add(cliente);
+            //ctx.BdModelo.Add(modelo);
             ctx.SaveChanges();
+
         }
     }
 }

@@ -28,7 +28,7 @@ namespace InterfaceGrafica
             this.DataContext = this;
         }
 
-        //public Modelo modeloParaSalvar { get; set; } = new Modelo();
+        public Modelo modeloParaSalvar { get; set; } = new Modelo();
         BancosSapataria ctx = new BancosSapataria();
         public Boolean ModoCriacaoModelo { get; set; } = false;
         public event PropertyChangedEventHandler PropertyChanged;
@@ -48,13 +48,9 @@ namespace InterfaceGrafica
 
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-
-            //ctx.BdModelo.Add(modeloParaSalvar);
-            //ctx.SaveChanges();
+            ctx.BdModelo.Add(modeloParaSalvar);
+            ctx.SaveChanges();
             this.Close();
         }
-
-
-
     }
 }
