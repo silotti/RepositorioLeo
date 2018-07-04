@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:InterfaceGrafica"
         mc:Ignorable="d"
         xmlns:System="clr-namespace:System;assembly=mscorlib"
-        Title="WindowCadastroModelo" Height="380" Width="600">
+        Title="WindowCadastroModelo" Height="600" Width="600">
 
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
@@ -15,6 +15,9 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -33,7 +36,7 @@
         <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.nome}"></TextBox>
 
         <Label Grid.Row="3">Cadarco:</Label>
-        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.cadarco}"></TextBox>
+        <CheckBox Grid.Row="3" Grid.Column="1" IsChecked="{Binding Path=modeloParaSalvar.cadarco}" />
 
         <Label Grid.Row="4">Material:</Label>
         <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.material}"></TextBox>
@@ -53,7 +56,21 @@
         <Button Grid.Row="9" Grid.Column="1" Width="100" Margin="20" HorizontalAlignment="Left"
                 x:Name="CancelarButton" Click="CancelarButton_Click">Cancelar</Button>
 
+        <DataGrid x:Name="GridBdModelo" Grid.Row="11" Grid.ColumnSpan="2" Margin="20" Visibility='Visible'
+                  ItemsSource="{Binding Modelo}"  CanUserAddRows="False" IsReadOnly="True" AutoGenerateColumns="False" >
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id_Modelo}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Nome" Binding="{Binding nome}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Cadarco" Binding="{Binding cadarco}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Material" Binding="{Binding material}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Cor" Binding="{Binding cor}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Tamanho" Binding="{Binding tamanho}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Preco" Binding="{Binding preco}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
 
 
     </Grid>
 </Window>
+    

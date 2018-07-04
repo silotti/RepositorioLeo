@@ -31,11 +31,14 @@
         <Label Grid.Row="2">IdPedido:</Label>
         <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=pedidoParaSalvar.id_Pedido}"></TextBox>
 
-        <Label Grid.Row="3">Quantidade:</Label>
-        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=pedidoParaSalvar.quantidade}"></TextBox>
+        <Label Grid.Row="3">IdModelo:</Label>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=pedidoParaSalvar.id_Modelo}"></TextBox>
 
-        <Label Grid.Row="4">Preco Total:</Label>
-        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=pedidoParaSalvar.precoTotal}"></TextBox>
+        <Label Grid.Row="4">Quantidade:</Label>
+        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=pedidoParaSalvar.quantidade}"></TextBox>
+
+        <Label Grid.Row="5">Preco Total:</Label>
+        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=pedidoParaSalvar.precoTotal}"></TextBox>
 
 
         <Button Grid.Row="7" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"

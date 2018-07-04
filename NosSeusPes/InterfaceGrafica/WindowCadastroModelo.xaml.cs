@@ -28,6 +28,14 @@ namespace InterfaceGrafica
             this.DataContext = this;
         }
 
+
+        public Visibility VisibilidadeDataGrid
+        {
+            get
+            {
+                    return Visibility.Visible;
+            }
+        }
         public Modelo modeloParaSalvar { get; set; } = new Modelo();
         BancosSapataria ctx = new BancosSapataria();
         public Boolean ModoCriacaoModelo { get; set; } = false;

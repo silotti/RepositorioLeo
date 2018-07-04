@@ -11,10 +11,10 @@ namespace SapatariaBiblioteca
     public class ClientePJ : Cliente
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id_ClientePJ { get; set; }
-        public String razao { get; set; }
         public int CNPJ { get; set; }
-        public String endereco { get; set; }
+        public String razao { get; set; }
+        public String enderecoPJ { get; set; }
     }
 }

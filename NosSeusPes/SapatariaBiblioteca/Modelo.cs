@@ -19,7 +19,7 @@ namespace SapatariaBiblioteca
         public String cor { get; set; }
         public String tamanho { get; set; }
         public float preco { get; set; }
-        public List<Estoque> itens1 { get; set; }
+        //public List<Estoque> itens1 { get; set; }
 
     }
 }

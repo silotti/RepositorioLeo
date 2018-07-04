@@ -13,7 +13,9 @@ namespace SapatariaBiblioteca
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id_Estoque { get; set; }
-        //public int id_Modelo { get; set; }
+        public int id_Modelo { get; set; }
+        public int quantidade { get; set; }
+
         //[ForeignKey("id_Modelo")]
         //[InverseProperty("itens1")]
         //public Modelo modelo { get; set; }
@@ -23,8 +25,7 @@ namespace SapatariaBiblioteca
         //[InverseProperty("itens2")]
         //public Pedido pedido { get; set; }
 
-        //public int tamanho { get; set; }
-        //public int quantidade { get; set; }
+
 
         //public List<Pedido> pedidos{ get; set; }
     }

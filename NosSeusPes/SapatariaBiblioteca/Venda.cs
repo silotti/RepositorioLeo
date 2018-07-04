@@ -13,6 +13,6 @@ namespace SapatariaBiblioteca
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id_Venda { get; set; }
-        public List<Pedido> pedidos1 { get; set; }
+        //public List<Pedido> pedidos1 { get; set; }
     }
 }

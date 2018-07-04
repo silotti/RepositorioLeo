@@ -25,6 +25,7 @@ namespace InterfaceGrafica
         public WindowCadastroCliente()
         {
             InitializeComponent();
+            this.clienteParaSalvar = new Cliente();
             this.DataContext = this;
         }
 
@@ -48,9 +49,13 @@ namespace InterfaceGrafica
 
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-            ctx.BdCliente.Add(clienteParaSalvar);
+            ctx.BdCliente.Add(this.clienteParaSalvar);
+            //ctx.BdCliente.Add(clienteParaSalvar);
             ctx.SaveChanges();
             this.Close();
         }
+
+        //public String Reg { get; set; }
+
     }
 }
