@@ -11,8 +11,19 @@ namespace SapatariaBiblioteca
     public class Venda
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id_Venda { get; set; }
-        //public List<Pedido> pedidos1 { get; set; }
+
+        //public int id_Modelo { get; set; }
+        //[ForeignKey("id_Modelo")]
+        //public Modelo Model { get; set; }
+
+        //public int id_Cliente { get; set; }
+        //[ForeignKey("id_Cliente")]
+        //public Cliente Client { get; set; }
+
+        public int quantidade { get; set; }
+        public DateTime? dt_Venda { get; set; }
+        public Decimal precoTotal { get; set; }
+
     }
 }

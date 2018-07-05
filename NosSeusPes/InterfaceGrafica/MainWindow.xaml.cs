@@ -1,4 +1,5 @@
-﻿using SapatariaBiblioteca;
+﻿using NosSeusPes;
+using SapatariaBiblioteca;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,9 +28,14 @@ namespace InterfaceGrafica
         }
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            if (sender == MenuNovoCliente)
+            if (sender == MenuNovoClientePF)
             {
-                WindowCadastroCliente window = new WindowCadastroCliente();
+                WindowCadastroClientePF window = new WindowCadastroClientePF();
+                window.ShowDialog();
+            }
+            else if (sender == MenuNovoClientePJ)
+            {
+                WindowCadastroClientePJ window = new WindowCadastroClientePJ();
                 window.ShowDialog();
             }
             else if (sender == MenuNovoModelo)
@@ -50,12 +56,6 @@ namespace InterfaceGrafica
 
             else if (sender == MenuGerarVenda)
             {
-                //WindowGerarVenda window = new WindowGerarVenda();
-                //window.ShowDialog();
-
-
-
-
                 BancosSapataria ctx = new BancosSapataria();
                 Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
                 dlg.FileName = "Relatorio"; // Nome padrão
@@ -67,7 +67,7 @@ namespace InterfaceGrafica
                 if (result == true)
                 {
                     // Salvar Documento
-                    ServiceMakeXML.CriarPlanilhaPedidos(ctx.BdPedido.ToList(), dlg.FileName);
+                    ServiceClosedXML.CriarPlanilhaPedidos(ctx.BdPedido.ToList(), dlg.FileName);
                 }
             }
         }

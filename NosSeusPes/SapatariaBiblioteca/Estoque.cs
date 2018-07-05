@@ -17,16 +17,16 @@ namespace SapatariaBiblioteca
         public int quantidade { get; set; }
 
         //[ForeignKey("id_Modelo")]
-        //[InverseProperty("itens1")]
+        //[InverseProperty("id_Modelo")]
         //public Modelo modelo { get; set; }
 
         //public int id_Pedido { get; set; }
         //[ForeignKey("id_Pedido")]
-        //[InverseProperty("itens2")]
+        //[InverseProperty("id_Pedido")]
         //public Pedido pedido { get; set; }
 
 
 
-        //public List<Pedido> pedidos{ get; set; }
+        //public List<Pedido> ped{ get; set; }
     }
 }

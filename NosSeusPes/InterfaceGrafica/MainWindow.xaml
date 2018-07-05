@@ -11,9 +11,13 @@
 
             <MenuItem Header="Cadastro">
                 <MenuItem 
-                    x:Name="MenuNovoCliente"
+                    x:Name="MenuNovoClientePF"
                     Click="MenuItem_Click"
-                    Header="Clientes"/>
+                    Header="ClientesPF"/>
+                <MenuItem 
+                    x:Name="MenuNovoClientePJ"
+                    Click="MenuItem_Click"
+                    Header="ClientesPJ"/>
                 <MenuItem
                     x:Name="MenuNovoModelo"
                     Click="MenuItem_Click"

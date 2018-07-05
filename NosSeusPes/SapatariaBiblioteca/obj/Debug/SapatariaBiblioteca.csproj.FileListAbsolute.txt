@@ -24,27 +24,33 @@ C:\Users\Giovano\Desktop\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBibli
 C:\Users\Giovano\Desktop\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.dll
 C:\Users\Giovano\Desktop\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.pdb
 C:\Users\Giovano\Desktop\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csprojAssemblyReference.cache
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csprojAssemblyReference.cache
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.Migrations.v1.resources
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.Migrations.v2.resources
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csproj.GenerateResource.cache
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csproj.CoreCompileInputs.cache
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\SapatariaBiblioteca.dll.config
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\SapatariaBiblioteca.dll
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\SapatariaBiblioteca.pdb
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.dll
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.xml
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csproj.CopyComplete
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.dll
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.pdb
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\ClosedXML.dll
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\ExcelNumberFormat.dll
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\FastMember.Signed.dll
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\System.IO.FileSystem.Primitives.dll
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\System.IO.Packaging.dll
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\ClosedXML.xml
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.xml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\ExcelNumberFormat.xml
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.Migrations.v1.resources
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.Migrations.v2.resources
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csproj.GenerateResource.cache
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csproj.CopyComplete
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.pdb
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\obj\Debug\SapatariaBiblioteca.csprojAssemblyReference.cache
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\ClosedXML.Extensions.AspNet.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\Spire.Common.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\Spire.License.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\Spire.Pdf.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\Spire.XLS.dll
+C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\SapatariaBiblioteca\bin\Debug\Microsoft.mshtml.dll
