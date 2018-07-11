@@ -11,6 +11,7 @@ namespace SapatariaBiblioteca
     public class Modelo
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //autoincrement de chave primaria
         public int id_Modelo { get; set; }
         public String nome { get; set; }
         public Boolean cadarco { get; set; }

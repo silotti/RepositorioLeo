@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         xmlns:System="clr-namespace:System;assembly=mscorlib"
         Title="WindowCadastroClientePF" Height="380" Width="600">
-
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -23,25 +22,26 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="1">IdCliente:</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=clienteParaSalvar.id_Cli}"></TextBox>
+        <Label Grid.Row="1" Grid.Column="0">IdCliente:</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=cli_PF_Atual.id_Cli}"></TextBox>
 
-        <Label Grid.Row="2">Nome:</Label>
-        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=clienteParaSalvar.nome}"></TextBox>
+        <Label Grid.Row="2" Grid.Column="0">Nome:</Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=cli_PF_Atual.nome}"></TextBox>
 
-        <Label Grid.Row="3">Cliente é Revenda:</Label>
-        <CheckBox Grid.Row="3" Grid.Column="1" IsChecked="{Binding Path=clienteParaSalvar.revenda}"/>
+        <Label Grid.Row="3" Grid.Column="0">Cliente é Revenda:</Label>
+        <CheckBox Grid.Row="3" Grid.Column="1" IsChecked="{Binding Path=cli_PF_Atual.revenda}"/>
 
-        <Label Grid.Row="4">CPF/CNPJ:</Label>
-        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=clienteParaSalvar.CPF}"></TextBox>
+        <Label Grid.Row="4" Grid.Column="0">CPF:</Label>
+        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=cli_PF_Atual.CPF}"></TextBox>
 
-        <Label Grid.Row="5">DataNascimento/Razao:</Label>
-        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=clienteParaSalvar.data_Nasc}"></TextBox>
+        <Label Grid.Row="5" Grid.Column="0">DataNascimento:</Label>
+        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=cli_PF_Atual.dt_Nasc}"></TextBox>
 
-        <Label Grid.Row="6">EndereçoPF/EndereçoPJ:</Label>
-        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=clienteParaSalvar.enderecoPF}"></TextBox>
+        <Label Grid.Row="6" Grid.Column="0">EnderecoPF:</Label>
+        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=cli_PF_Atual.enderecoPF}"></TextBox>
 
 
         <Button Grid.Row="7" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"

@@ -22,52 +22,18 @@ namespace InterfaceGrafica
     public partial class WindowCadastroClientePJ : Window,
         INotifyPropertyChanged
     {
-        private ClientePJ cli_PJ = new ClientePJ();
-        public ClientePJ ClientePJAtual
-        {
-            get
-            {
-                return cli_PJ;
-            }
-            set
-            {
-                cli_PJ = value;
-                this.NotifyPropertyChanged("ClientePJAtual");
-            }
-        }
-
-        public Boolean Visao { get; set; } = false;
-        public Visibility VisibilidadeDataGrid
-        {
-            get
-            {
-                if (Visao)
-                {
-                    return Visibility.Hidden;
-                }
-                else
-                {
-                    return Visibility.Visible;
-                }
-            }
-        }
-
-        private BancosSapataria ctx = new BancosSapataria();
-        public IList<ClientePJ> BdClientePJ { get; set; }
-
-        //public Cliente clienteParaSalvar { get; set; } = new Cliente();
-
-        //public Boolean ModoCriacaoCliente { get; set; } = false;
-        // public event PropertyChangedEventHandler PropertyChanged;
+        #region "ConstrutorDaClasse"
         public WindowCadastroClientePJ()
         {
             InitializeComponent();
-            //this.clienteParaSalvar = new Cliente();
             this.DataContext = this;
-            SalvaClientePJ crie = new SalvaClientePJ();
-            this.BdClientePJ = crie.ObterClientePJ();
         }
-        public event PropertyChangedEventHandler PropertyChanged;    
+        public ClientePJ cli_PJ_Atual { get; set; } = new ClientePJ(); //cria obj cli_PJ_Atual com a classe ClientePJ   
+        BancosSapataria ctx = new BancosSapataria(); //cria obj ctx para salvar no arquivo com os bancos de dados
+        #endregion
+
+        #region "NotifyPropertyChanged"
+        public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(string Property)
         {
             if (PropertyChanged != null)
@@ -75,50 +41,80 @@ namespace InterfaceGrafica
                 PropertyChanged(this, new PropertyChangedEventArgs(Property));
             }
         }
-    
+        #endregion
+
+        //public Cliente ClientePF
+        //{
+        //    get => cli_PF_Atual;
+        //    set
+        //    {
+        //        cli_PF_Atual = value;
+        //        this.NotifyPropertyChanged("ClientePF");
+        //    }
+        //}
+        //public Boolean Visao { get; set; } = false;
+        //public Visibility VisibilidadeDataGrid
+        //{
+        //   get
+        //    {
+        //        if (Visao)
+        //        {
+        //            return Visibility.Hidden;
+        //        }
+        //        else
+        //        {
+        //            return Visibility.Visible;
+        //        }
+        //    }
+        //}
+
+        //public IList<ClientePF> BdClientePF { get; set; }
+        //public ClientePF Cliente { get; }
+
+        #region "BotaoOk"
+        private void OkButton_Click(object sender, RoutedEventArgs e)
+        {
+            //if (Visao)
+            //{
+            //    ctx.BdClientePF.Add(ClientePFAtual);
+            //    ctx.SaveChanges();
+            //}
+            //else
+            //{
+                //if (ClientePFAtual != null
+                //    && ClientePFAtual.id_Cliente > 0)
+                //{
+                //    ClientePF Salvar = ctx.BdClientePF.Find(ClientePFAtual.id_Cliente);
+                //    Salvar.nome = ClientePFAtual.nome;
+                //    Salvar.CPF = ClientePFAtual.CPF;
+                //    Salvar.dt_Nasc = ClientePFAtual.dt_Nasc;
+                //    Salvar.enderecoPF = ClientePFAtual.enderecoPF;
+                //    ctx.Entry(Salvar).State =
+                //        System.Data.Entity.EntityState.Modified;
+                //    ctx.SaveChanges();
+                //}
+            //}          
+            ctx.BdCliente.Add(cli_PJ_Atual); // adiciona atual ao banco de Cliente
+            ctx.SaveChanges(); // salva atualizações do banco
+            MessageBox.Show("Salvo com Sucesso"); //menssagem de salvo
+            this.Close(); //fecha janelas
+        }
+        #endregion
+
+        // private void PessoaFDataGridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //     foreach (ClientePF item in e.RemovedItems)
+        //     {
+        //         ctx.BdClientePF.Remove(item);
+        //     }
+        // }
+        // public String Reg { get; set; }
+
+        #region "BotaoCancelar"
         private void CancelarButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
-
-        private void OkButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (Visao)
-            {
-                ctx.BdClientePJ.Add(ClientePJAtual);
-                ctx.SaveChanges();
-            }
-            else
-            {
-                if (ClientePJAtual != null
-                    && ClientePJAtual.id_Cliente > 0)
-                {
-                    ClientePJ Salvar = ctx.BdClientePJ.Find(ClientePJAtual.id_Cliente);
-                    //Salvar.nome = ClientePJAtual.nome;
-                    Salvar.CNPJ = ClientePJAtual.CNPJ;
-                    Salvar.razao = ClientePJAtual.razao;
-                    Salvar.enderecoPJ = ClientePJAtual.enderecoPJ;
-                    ctx.Entry(Salvar).State =
-                        System.Data.Entity.EntityState.Modified;
-                    ctx.SaveChanges();
-                }
-            }
-            MessageBox.Show("Salvo com Sucesso");
-            ctx.BdClientePJ.Add(this.ClientePJAtual);
-            //ctx.BdCliente.Add(clienteParaSalvar);
-            ctx.SaveChanges();
-            this.Close();
-        }
-
-        private void PessoaFDataGridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            foreach (ClientePJ item in e.RemovedItems)
-            {
-                ctx.BdClientePJ.Remove(item);
-            }
-        }
-        //public String Reg { get; set; }
-
-
+        #endregion
     }
 }

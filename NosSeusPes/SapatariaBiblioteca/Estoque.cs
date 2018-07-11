@@ -11,7 +11,7 @@ namespace SapatariaBiblioteca
     public class Estoque
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //autoincrement de chave primaria
         public int id_Estoque { get; set; }
         public int id_Modelo { get; set; }
         public int quantidade { get; set; }
