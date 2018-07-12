@@ -18,5 +18,30 @@ namespace SapatariaBiblioteca
         public List<Venda> pedidos { get; set; }
         //public Boolean revenda { get; set; }
         //public virtual ICollection<Venda> VendasCliente { get; set; } = new List<Venda>();
+
+        public byte[] foto { get; set; }
+
+        /// <summary>
+        /// Este método é essencial para algumas comparações funcionarem.
+        /// Caso contrário os combobox e outras seleções na interface gráfica
+        /// não conseguiram visualizar que dois objetos que foram 
+        /// carregados do banco de dados são iguais.
+        /// </summary>
+        /// <param name="obj">Objeto a ser comparado com o atual</param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {
+            if (obj is Cliente)
+            {
+                return this.id_Cliente == ((Cliente)(obj)).id_Cliente;
+            }
+            return false;
+        }
+        public override int GetHashCode()
+        {
+            return this.id_Cliente.GetHashCode();
+        }
+
+
     }
 }

@@ -13,5 +13,9 @@ namespace SapatariaBiblioteca
         public String CPF { get; set; }
         public DateTime dt_Nasc { get; set; }
         public String enderecoPF { get; set; }
+
+
+
+
     }
 }
