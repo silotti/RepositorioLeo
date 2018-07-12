@@ -60,7 +60,7 @@ namespace InterfaceGrafica
 
         //public Cliente ClientePF
         //{
-        //    get => Cli_PF_Atual;
+        //    get => Cli_PF_Atual; // lambda expression
         //    set
         //    {
         //        Cli_PF_Atual = value;
