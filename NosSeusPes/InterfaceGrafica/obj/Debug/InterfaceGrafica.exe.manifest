@@ -133,7 +133,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oTVXzS/P6sEs9nA9PJ1BSY9JK4jiwBRJ3q6r8Ug0HMM=</dsig:DigestValue>
+        <dsig:DigestValue>W997mN2lrNpVAQAGDwCKHIlK5oyH+ro28fTEJSlHFFo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -150,14 +150,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SapatariaBiblioteca.dll" size="21504">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SapatariaBiblioteca.dll" size="20992">
       <assemblyIdentity name="SapatariaBiblioteca" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oRWQz7vb8CTZjLZVv32kasMU/8AmUZUrhf+ktGfLzic=</dsig:DigestValue>
+        <dsig:DigestValue>DN0SIMq90BPMxUpA+71Ky3adhBzDVwtemagDtZazL/A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -67,7 +67,7 @@ namespace InterfaceGrafica
                 if (result == true)
                 {
                     // Salvar Documento
-                    ServiceClosedXML.CriarPlanilhaPedidos(ctx.BdPedido.ToList(), dlg.FileName);
+                    ServiceClosedXML.CriarPlanilhaClientes(ctx.BdCliente.ToList(), dlg.FileName);
                 }
             }
         }

@@ -13,7 +13,7 @@ namespace NosSeusPes
         
 
 
-        public static void CriarPlanilhaPedidos(IEnumerable<Pedido> pedido, String caminho)
+        public static void CriarPlanilhaClientes(IEnumerable<Cliente> cliente, String caminho)
         {
             BancosSapataria ctx = new BancosSapataria();
 
@@ -21,37 +21,30 @@ namespace NosSeusPes
             var workbook = new XLWorkbook();
             int ListaSapatosLinhaInicio = 1;
             int ListaSapatosLinhaInicio1 = 2;
-            var worksheet = workbook.Worksheets.Add("Sapatos Em Estoque");
-            foreach (Pedido t in pedido)
+            var worksheet = workbook.Worksheets.Add("Lista de Clientes");
+            foreach (Cliente t in cliente)
             {
-                var ped = ctx.BdPedido.Find(t.id_Pedido);
+                var ped = ctx.BdCliente.Find(t.id_Cliente);
 
                 //Um arquivo excel pode conter várias planilhas. 
+                var columnId = worksheet.Column("A");
+                var columnNome = worksheet.Column("B");
+                //var columnEndereco = worksheet.Column("C");
+
+                columnId.Cell(ListaSapatosLinhaInicio).
+                    Value = "Id";
+                columnNome.Cell(ListaSapatosLinhaInicio).
+                    Value = "Nome do Cliente";
+                //columnEndereco.Cell(ListaSapatosLinhaInicio).
+                //    Value = "Endereco";
 
 
-
-                var columnModelo = worksheet.Column("A");
-                var columnPreco = worksheet.Column("B");
-                var columnTamanho = worksheet.Column("C");
-                var columnQntDisponivel = worksheet.Column("D");
-
-                columnModelo.Cell(ListaSapatosLinhaInicio).
-                    Value = "Modelo";
-                columnPreco.Cell(ListaSapatosLinhaInicio).
-                    Value = "Preco";
-                columnTamanho.Cell(ListaSapatosLinhaInicio).
-                    Value = "Tamanho";
-                columnQntDisponivel.Cell(ListaSapatosLinhaInicio).
-                    Value = "Cor";
-
-                //columnModelo.Cell(ListaSapatosLinhaInicio1).
-                 //  Value = pedido.nome;
-                columnPreco.Cell(ListaSapatosLinhaInicio1).
-                    Value = t.id_Cliente;
-                columnTamanho.Cell(ListaSapatosLinhaInicio1).
-                    Value = t.quantidade;
-                columnQntDisponivel.Cell(ListaSapatosLinhaInicio1).
-                    Value = t.precoTotal;
+                columnId.Cell(ListaSapatosLinhaInicio1).
+                   Value = t.id_Cliente;
+                columnNome.Cell(ListaSapatosLinhaInicio1).
+                    Value = t.nome;
+                //columnEndereco.Cell(ListaSapatosLinhaInicio1).
+                //    Value = t.enderecoPF;
                 worksheet.Row(ListaSapatosLinhaInicio).Style.Fill.BackgroundColor = XLColor.Gray;
                 worksheet.Row(ListaSapatosLinhaInicio).Style.Font.Bold = true;
                 ListaSapatosLinhaInicio1++;
