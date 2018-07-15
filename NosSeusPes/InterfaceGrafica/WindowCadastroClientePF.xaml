@@ -30,7 +30,7 @@
                RenderTransformOrigin="1.044,0.498" Margin="10,28,10,18" Width="164"/>
 
         <Label Grid.Row="1" Grid.Column="0">IdCliente:</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=ClientePFSelecionado.id_Cli}"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=ClientePFSelecionado.id_Cliente}"></TextBox>
 
         <Label Grid.Row="2" Grid.Column="0">Nome:</Label>
         <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=ClientePFSelecionado.nome}"></TextBox>
@@ -41,7 +41,7 @@
         <Label Grid.Row="4" Grid.Column="0">CPF:</Label>
         <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=ClientePFSelecionado.CPF}"></TextBox>
 
-        <Label Grid.Row="5" Grid.Column="0">DataNascimento:</Label>
+        <Label Grid.Row="5" Grid.Column="0">Data de Nascimento:</Label>
         <DatePicker Grid.Row="5" Grid.Column="1" SelectedDate="{Binding Path=ClientePFSelecionado.dt_Nasc}"></DatePicker>
 
         <Label Grid.Row="6" Grid.Column="0">EnderecoPF:</Label>
@@ -56,13 +56,21 @@
                   Visibility="{Binding Path=VisibilidadeDataGrid}"
                   ItemsSource="{Binding Path=BdCliente}"
                   SelectedItem="{Binding Path=ClientePFSelecionado}"
-                  AutoGenerateColumns="True" Margin="10,10,10,18">
+                  AutoGenerateColumns="False" Margin="10,10,10,18">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding id_Cliente}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Nome" Binding="{Binding nome}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="CPF" Binding="{Binding CPF}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Nascimento" Binding="{Binding dt_Nasc}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Endereço" Binding="{Binding enderecoPF}"></DataGridTextColumn>
+            </DataGrid.Columns>
         </DataGrid>
 
         <Button Grid.Row="9" Grid.Column="0" Width="100" Margin="0,20,20,177"
                 HorizontalAlignment="Right"
                 x:Name="OkButton" 
-                Click="OkButton_Click">Ok</Button>
+                Click="OkButton_Click">Salvar</Button>
 
         <Button Grid.Row="9" Grid.Column="1" Width="100" Margin="20,20,0,177"
                 HorizontalAlignment="Left"

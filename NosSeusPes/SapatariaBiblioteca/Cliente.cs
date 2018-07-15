@@ -19,7 +19,7 @@ namespace SapatariaBiblioteca
         //public Boolean revenda { get; set; }
         //public virtual ICollection<Venda> VendasCliente { get; set; } = new List<Venda>();
 
-        public byte[] foto { get; set; }
+
 
         /// <summary>
         /// Este método é essencial para algumas comparações funcionarem.
@@ -29,6 +29,10 @@ namespace SapatariaBiblioteca
         /// </summary>
         /// <param name="obj">Objeto a ser comparado com o atual</param>
         /// <returns></returns>
+        /// 
+
+        // acrescentar arquivo de foto
+        public byte[] foto { get; set; }
         public override bool Equals(object obj)
         {
             if (obj is Cliente)

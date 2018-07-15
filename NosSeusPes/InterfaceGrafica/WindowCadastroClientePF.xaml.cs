@@ -18,17 +18,16 @@ using System.Windows.Shapes;
 namespace InterfaceGrafica
 {
     /// <summary>
-    /// Interaction logic for WindowCadastroCliente.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class WindowCadastroClientePF : Window,
         INotifyPropertyChanged
     {
-
         BancosSapataria ctx = new BancosSapataria(); //cria obj ctx para salvar no arquivo com os bancos de dados
         private ClientePF Cli_PF_Atual = new ClientePF(); //cria obj Cli_PF_Atual com a classe ClientePF   
 
+        #region "selecionar pela tabela"
         //selecionar pela tabela
-        //private Cliente Cli_Banco = new Cliente();
         public ClientePF ClientePFSelecionado
         {
             get
@@ -41,18 +40,23 @@ namespace InterfaceGrafica
                 this.NotifyPropertyChanged("ClientePFSelecionado");
             }
         }
+        #endregion
 
-        public Boolean ModoCriacao { get; set; } = false;
+        //cria a variavel ModoAlteracao da Tabela e já seta ela como false
+        public Boolean ModoCriarNovo { get; set; } = false;
 
         #region "VisibilidadeDataGrid"
+        //se foi selecionada a tabela coloca como ModoCrirNovo como True
         public Visibility VisibilidadeDataGrid
         {
            get
            {
-                if (ModoCriacao)
+                // se verdade
+                if (ModoCriarNovo)
                 {
                     return Visibility.Hidden;
                 }
+                // se falso
                 else
                 {
                     return Visibility.Visible;
@@ -60,9 +64,11 @@ namespace InterfaceGrafica
             }
         }
         #endregion
-        public IList<Cliente> BdCliente { get; set; } // cria list de clientes
 
-        #region "ConstrutorDaClasse"
+        // cria IList de clientes
+        public IList<Cliente> BdCliente { get; set; } 
+
+        #region "Construtor da Classe"
         public WindowCadastroClientePF()
         {
             InitializeComponent();
@@ -70,7 +76,6 @@ namespace InterfaceGrafica
             this.BdCliente = ctx.BdCliente.ToList(); //salva banco como lista
         }
         #endregion
-
 
         #region "NotifyPropertyChanged"
         public event PropertyChangedEventHandler PropertyChanged;
@@ -83,39 +88,46 @@ namespace InterfaceGrafica
         }
         #endregion
 
-        //public IList<ClientePF> BdCliente { get; set; }
-        //public ClientePF Cliente { get; }
-
-        #region "BotaoOk"
+        #region "Botao de Ok"
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-            //if (Visao)
-            //{
-            //    ctx.BdClientePF.Add(Cli_PF_Atual);
-            //    ctx.SaveChanges();
-            //}
+            //verifica se ModoCriarNovo é true (criar)
+            if (this.ClientePFSelecionado.id_Cliente <= 0)
+            {
+                //ctx.BdCliente.Add(this.ClientePFSelecionado);
+                ctx.BdCliente.Add(Cli_PF_Atual); // adiciona atual ao banco de Cliente
+                ctx.SaveChanges();
+                MessageBox.Show("Cliente Novo Salvo com Sucesso"); //menssagem de salvo
+                this.Close(); //fecha janelas
 
+                //abre novamente para limpar tudo
+                WindowCadastroClientePF window = new WindowCadastroClientePF();
+                window.ShowDialog();
+            }
+
+            //verifica se ModoCriarNovo é false (alterar)
+            else
+            {
+                ctx.SaveChanges();
+                MessageBox.Show("Alteração Salva com Sucesso"); //menssagem de salvo
+                //Cliente Salvar = ctx.BdCliente.Find(Cli_PF_Atual.id_Cliente);
+                //Salvar.nome = Cli_PF_Atual.nome;
+                //Salvar.CPF = Cli_PF_Atual.CPF;
+                //Salvar.dt_Nasc = Cli_PF_Atual.dt_Nasc;
+                //Salvar.enderecoPF = Cli_PF_Atual.enderecoPF;
+                //ctx.Entry(Salvar).State = System.Data.Entity.EntityState.Modified;
+            }
+
+            //salva atual
+            //if (ModoCriacao)
+            //{
+            //    ctx.BdCliente.Add(Cli_PF_Atual); // adiciona atual ao banco de Cliente
+            //    ctx.SaveChanges(); // salva atualizações do banco
+            //}
             //else
             //{
-            //if (Cli_PF_Atual != null
-            //    && Cli_PF_Atual.id_Cliente > 0)
-            //{
-
-            //ClientePF Salvar = ctx.BdClientePF.Find(Cli_PF_Atual.id_Cliente);
-            //Salvar.nome = Cli_PF_Atual.nome;
-            //Salvar.CPF = Cli_PF_Atual.CPF;
-            //Salvar.dt_Nasc = Cli_PF_Atual.dt_Nasc;
-            //Salvar.enderecoPF = Cli_PF_Atual.enderecoPF;
-            //ctx.Entry(Salvar).State =
-            //    System.Data.Entity.EntityState.Modified;
-            //ctx.SaveChanges();
+            //    ctx.SaveChanges();
             //}
-            //}
-
-            ctx.BdCliente.Add(Cli_PF_Atual); // adiciona atual ao banco de Cliente
-            ctx.SaveChanges(); // salva atualizações do banco
-            MessageBox.Show("Salvo com Sucesso"); //menssagem de salvo
-            this.Close(); //fecha janelas
         }
         #endregion
 
@@ -130,15 +142,14 @@ namespace InterfaceGrafica
 
         // public String Reg { get; set; }
 
-        #region "BotaoCancelar"
+        #region "Botao de Cancelar"
         private void CancelarButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
         #endregion
 
-
-        #region "BotaoFotoOuLogo"
+        #region "Botao Foto ou Logo"
         //função de adicionar foto
         private void BtnSelecionarFoto_Click(object sender, RoutedEventArgs e)
         {
@@ -153,8 +164,7 @@ namespace InterfaceGrafica
                 var uri = new Uri(dlg.FileName);
                 var imagemFile = File.Open(dlg.FileName, FileMode.Open);
                 Cli_PF_Atual.foto = new byte[imagemFile.Length];
-                imagemFile.Read(Cli_PF_Atual.foto,
-                    0, (int)imagemFile.Length);
+                imagemFile.Read(Cli_PF_Atual.foto, 0, (int)imagemFile.Length);
                 NotifyPropertyChanged("Camisa");
             }
         }
