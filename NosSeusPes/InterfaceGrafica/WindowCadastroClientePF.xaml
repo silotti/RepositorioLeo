@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InterfaceGrafica"
         mc:Ignorable="d"
-        xmlns:System="clr-namespace:System;assembly=mscorlib"
         Title="WindowCadastroClientePF" Height="550" Width="600">
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
@@ -26,37 +25,39 @@
             <RowDefinition Height="233"/>
         </Grid.RowDefinitions>
 
-        <Image HorizontalAlignment="Center" Grid.Column="2" Source="http://emser.es/wp-content/uploads/2016/08/usuario-sin-foto.png" RenderTransformOrigin="1.044,0.498" Margin="10,28,10,18" Width="164" Grid.Row="8"/>
+        <Image Grid.Row="8" Grid.Column="2" HorizontalAlignment="Center"
+               Source="http://emser.es/wp-content/uploads/2016/08/usuario-sin-foto.png" 
+               RenderTransformOrigin="1.044,0.498" Margin="10,28,10,18" Width="164"/>
 
         <Label Grid.Row="1" Grid.Column="0">IdCliente:</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=Cli_PF_Atual.id_Cli}"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=ClientePFSelecionado.id_Cli}"></TextBox>
 
         <Label Grid.Row="2" Grid.Column="0">Nome:</Label>
-        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=Cli_PF_Atual.nome}"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=ClientePFSelecionado.nome}"></TextBox>
 
         <Label Grid.Row="3" Grid.Column="0">Cliente é Revenda:</Label>
-        <CheckBox Grid.Row="3" Grid.Column="1" IsChecked="{Binding Path=Cli_PF_Atual.revenda}"/>
+        <CheckBox Grid.Row="3" Grid.Column="1" IsChecked="{Binding Path=ClientePFSelecionado.revenda}"/>
 
         <Label Grid.Row="4" Grid.Column="0">CPF:</Label>
-        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=Cli_PF_Atual.CPF}"></TextBox>
+        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=ClientePFSelecionado.CPF}"></TextBox>
 
         <Label Grid.Row="5" Grid.Column="0">DataNascimento:</Label>
-        <DatePicker Grid.Row="5" Grid.Column="1" SelectedDate="{Binding Path=Cli_PF_Atual.dt_Nasc}"></DatePicker>
+        <DatePicker Grid.Row="5" Grid.Column="1" SelectedDate="{Binding Path=ClientePFSelecionado.dt_Nasc}"></DatePicker>
 
         <Label Grid.Row="6" Grid.Column="0">EnderecoPF:</Label>
-        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=Cli_PF_Atual.enderecoPF}"></TextBox>
+        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=ClientePFSelecionado.enderecoPF}"></TextBox>
 
         <StackPanel Margin="10,10,10,18" Orientation="Vertical" Grid.Row="8" Grid.Column="2">
             <Button x:Name="BtnSelecionarFoto" Click="BtnSelecionarFoto_Click">Selecionar Foto ou Logo</Button>
-            <Image Margin="5" Stretch="Uniform" Height="100" Source="{Binding Cli_PF_Atual.foto}"/>
+            <Image Margin="5" Stretch="Uniform" Height="100" Source="{Binding ClientePFSelecionado.foto}"/>
         </StackPanel>
-
 
         <DataGrid Grid.Row="8" Grid.ColumnSpan="2" 
                   Visibility="{Binding Path=VisibilidadeDataGrid}"
                   ItemsSource="{Binding Path=BdCliente}"
-                  SelectedItem="{Binding Path=Cli_PF_Atual}"
-                  AutoGenerateColumns="True" Margin="10,10,10,18"/>
+                  SelectedItem="{Binding Path=ClientePFSelecionado}"
+                  AutoGenerateColumns="True" Margin="10,10,10,18">
+        </DataGrid>
 
         <Button Grid.Row="9" Grid.Column="0" Width="100" Margin="0,20,20,177"
                 HorizontalAlignment="Right"
@@ -67,8 +68,5 @@
                 HorizontalAlignment="Left"
                 x:Name="CancelarButton"
                 Click="CancelarButton_Click">Cancelar</Button>
-
-
-
     </Grid>
 </Window>

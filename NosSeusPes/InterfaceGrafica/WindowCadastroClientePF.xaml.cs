@@ -23,52 +23,27 @@ namespace InterfaceGrafica
     public partial class WindowCadastroClientePF : Window,
         INotifyPropertyChanged
     {
-        public ClientePF Cli_PF_Atual { get; set; } = new ClientePF(); //cria obj Cli_PF_Atual com a classe ClientePF   
+
         BancosSapataria ctx = new BancosSapataria(); //cria obj ctx para salvar no arquivo com os bancos de dados
-        public IList<Cliente> BdCliente { get; set; } // cria list de clientes
-        //        <DataGrid Grid.Row="4" Grid.ColumnSpan= "4" Margin= "20"
-        //          x:Name= "ClientePFDataGridView"
-        //          Visibility= "{Binding Path=VisibilidadeDataGrid}"
-        //          ItemsSource= "{Binding Path=PessoasF}"
-        //          SelectedItem= "{Binding Path=cli_PF_Atual}"
-        //          SelectionChanged= "PessoaFDataGridView_SelectionChanged"
-        //          AutoGenerateColumns= "True" >
-        //</ DataGrid >
+        private ClientePF Cli_PF_Atual = new ClientePF(); //cria obj Cli_PF_Atual com a classe ClientePF   
 
-
-
-        #region "ConstrutorDaClasse"
-        public WindowCadastroClientePF()
+        //selecionar pela tabela
+        //private Cliente Cli_Banco = new Cliente();
+        public ClientePF ClientePFSelecionado
         {
-            InitializeComponent();
-            this.DataContext = this;
-            this.BdCliente = ctx.BdCliente.ToList(); //salva banco como lista
-        }
-
-        #endregion
-
-        #region "NotifyPropertyChanged"
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void NotifyPropertyChanged(string Property)
-        {
-            if (PropertyChanged != null)
+            get
             {
-                PropertyChanged(this, new PropertyChangedEventArgs(Property));
+                return Cli_PF_Atual; // lambda expression
+            }
+            set
+            {
+                Cli_PF_Atual = value;
+                this.NotifyPropertyChanged("ClientePFSelecionado");
             }
         }
-        #endregion
-
-        //public Cliente ClientePF
-        //{
-        //    get => Cli_PF_Atual; // lambda expression
-        //    set
-        //    {
-        //        Cli_PF_Atual = value;
-        //        this.NotifyPropertyChanged("ClientePF");
-        //    }
-        //}
 
         public Boolean ModoCriacao { get; set; } = false;
+
         #region "VisibilidadeDataGrid"
         public Visibility VisibilidadeDataGrid
         {
@@ -85,8 +60,29 @@ namespace InterfaceGrafica
             }
         }
         #endregion
+        public IList<Cliente> BdCliente { get; set; } // cria list de clientes
 
-        //BancosSapataria ctx = new BancosSapataria(); //cria obj ctx para salvar no arquivo com os bancos de dados
+        #region "ConstrutorDaClasse"
+        public WindowCadastroClientePF()
+        {
+            InitializeComponent();
+            this.DataContext = this;
+            this.BdCliente = ctx.BdCliente.ToList(); //salva banco como lista
+        }
+        #endregion
+
+
+        #region "NotifyPropertyChanged"
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged(string Property)
+        {
+            if (this.PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(Property));
+            }
+        }
+        #endregion
+
         //public IList<ClientePF> BdCliente { get; set; }
         //public ClientePF Cliente { get; }
 
@@ -115,8 +111,6 @@ namespace InterfaceGrafica
             //ctx.SaveChanges();
             //}
             //}
-
-
 
             ctx.BdCliente.Add(Cli_PF_Atual); // adiciona atual ao banco de Cliente
             ctx.SaveChanges(); // salva atualizações do banco
