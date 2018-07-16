@@ -126,14 +126,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InterfaceGrafica.exe" size="43472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InterfaceGrafica.exe" size="43984">
       <assemblyIdentity name="InterfaceGrafica" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SvWxg2fw12ml5DYyRaHziUg7ZyxeRsu+8hgqqlRrw8M=</dsig:DigestValue>
+        <dsig:DigestValue>QeXsSMPuUEPI6y5IFY+JOhxkJgEEoixCB2ufU9tNhrc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

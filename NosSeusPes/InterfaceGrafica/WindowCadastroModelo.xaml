@@ -30,10 +30,12 @@
                RenderTransformOrigin="1.044,0.498" Margin="10,28,10,18" Width="164"/>
 
         <Label Grid.Row="1" Grid.Column="0">IdModelo:</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=ModeloSelecionado.id_Modelo}"></TextBox>
-
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=ModeloSelecionado.id_Modelo}" 
+                 IsReadOnly="True" IsTabStop="False" Focusable="False" Name="tbFocusMe"
+                 IsHitTestVisible="False" BorderBrush="{x:Null}"/>
+        
         <Label Grid.Row="2" Grid.Column="0">Nome:</Label>
-        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=ModeloSelecionado.nome}"></TextBox>
+        <TextBox Name="box1" Grid.Row="2" Grid.Column="1" Text="{Binding Path=ModeloSelecionado.nome}"></TextBox>
 
         <Label Grid.Row="3" Grid.Column="0">Cadarço:</Label>
         <CheckBox Grid.Row="3" Grid.Column="1" IsChecked="{Binding Path=ModeloSelecionado.cadarco}"/>

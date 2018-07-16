@@ -74,6 +74,7 @@ namespace InterfaceGrafica
             InitializeComponent();
             this.DataContext = this;
             this.BdCliente = ctx.BdCliente.ToList(); //salva banco como lista de clientes
+            box1.Focus(); //define o foco na textbox box1
         }
         #endregion
 
