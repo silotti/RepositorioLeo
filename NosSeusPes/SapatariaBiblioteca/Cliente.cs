@@ -10,13 +10,13 @@ namespace SapatariaBiblioteca
 {
     public class Cliente
     {
-        [Key]
+        [Key] //chave primaria
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //autoincrement de chave primaria
         public int id_Cliente { get; set; }
         public String nome { get; set; }
+        public Boolean revenda { get; set; }
+        //public List<Venda> pedidos { get; set; }
 
-        public List<Venda> pedidos { get; set; }
-        //public Boolean revenda { get; set; }
         //public virtual ICollection<Venda> VendasCliente { get; set; } = new List<Venda>();
 
 

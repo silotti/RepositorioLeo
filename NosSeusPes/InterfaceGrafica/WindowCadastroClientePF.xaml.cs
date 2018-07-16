@@ -27,7 +27,7 @@ namespace InterfaceGrafica
         private ClientePF Cli_PF_Atual = new ClientePF(); //cria obj Cli_PF_Atual com a classe ClientePF   
 
         #region "selecionar pela tabela"
-        //selecionar pela tabela
+        //valor atual dos campos de preenchimento
         public ClientePF ClientePFSelecionado
         {
             get
@@ -42,11 +42,11 @@ namespace InterfaceGrafica
         }
         #endregion
 
-        //cria a variavel ModoAlteracao da Tabela e já seta ela como false
+        //cria a variavel ModoCriarNovo da Tabela e já seta ela como false
         public Boolean ModoCriarNovo { get; set; } = false;
 
         #region "VisibilidadeDataGrid"
-        //se foi selecionada a tabela coloca como ModoCrirNovo como True
+        //se foi selecionada da tabela retorna os dados
         public Visibility VisibilidadeDataGrid
         {
            get
@@ -65,7 +65,7 @@ namespace InterfaceGrafica
         }
         #endregion
 
-        // cria IList de clientes
+        // cria IList de clientes para usar na tabela
         public IList<Cliente> BdCliente { get; set; } 
 
         #region "Construtor da Classe"
@@ -73,7 +73,7 @@ namespace InterfaceGrafica
         {
             InitializeComponent();
             this.DataContext = this;
-            this.BdCliente = ctx.BdCliente.ToList(); //salva banco como lista
+            this.BdCliente = ctx.BdCliente.ToList(); //salva banco como lista de clientes
         }
         #endregion
 
@@ -91,56 +91,26 @@ namespace InterfaceGrafica
         #region "Botao de Ok"
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-            //verifica se ModoCriarNovo é true (criar)
+            //verifica se o cliente atual é 0 (criar)
             if (this.ClientePFSelecionado.id_Cliente <= 0)
             {
                 //ctx.BdCliente.Add(this.ClientePFSelecionado);
-                ctx.BdCliente.Add(Cli_PF_Atual); // adiciona atual ao banco de Cliente
+                ctx.BdCliente.Add(this.ClientePFSelecionado); //adiciona atual ao banco de Cliente
                 ctx.SaveChanges();
                 MessageBox.Show("Cliente Novo Salvo com Sucesso"); //menssagem de salvo
-                this.Close(); //fecha janelas
-
-                //abre novamente para limpar tudo
-                WindowCadastroClientePF window = new WindowCadastroClientePF();
-                window.ShowDialog();
+                this.Close(); //fecha janelas       
+                WindowCadastroClientePF window = new WindowCadastroClientePF();//abre novamente zerada
+                window.ShowDialog(); //mostra janela
             }
 
-            //verifica se ModoCriarNovo é false (alterar)
+            //verifica se caso o id_Cliente não seja 0 (alterar)
             else
             {
                 ctx.SaveChanges();
                 MessageBox.Show("Alteração Salva com Sucesso"); //menssagem de salvo
-                //Cliente Salvar = ctx.BdCliente.Find(Cli_PF_Atual.id_Cliente);
-                //Salvar.nome = Cli_PF_Atual.nome;
-                //Salvar.CPF = Cli_PF_Atual.CPF;
-                //Salvar.dt_Nasc = Cli_PF_Atual.dt_Nasc;
-                //Salvar.enderecoPF = Cli_PF_Atual.enderecoPF;
-                //ctx.Entry(Salvar).State = System.Data.Entity.EntityState.Modified;
             }
-
-            //salva atual
-            //if (ModoCriacao)
-            //{
-            //    ctx.BdCliente.Add(Cli_PF_Atual); // adiciona atual ao banco de Cliente
-            //    ctx.SaveChanges(); // salva atualizações do banco
-            //}
-            //else
-            //{
-            //    ctx.SaveChanges();
-            //}
         }
         #endregion
-
-        // private void ClientePF_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-        //     foreach (ClientePF item in e.RemovedItems)
-        //     {
-        //         ctx.BdClientePF.Remove(item);
-        //     }
-        // }
-
-
-        // public String Reg { get; set; }
 
         #region "Botao de Cancelar"
         private void CancelarButton_Click(object sender, RoutedEventArgs e)

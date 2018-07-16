@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InterfaceGrafica"
         mc:Ignorable="d"
-        xmlns:System="clr-namespace:System;assembly=mscorlib"
-        Title="WindowCadastroClientePJ" Height="380" Width="600">
+        Title="WindowCadastroClientePJ" Height="550" Width="600">
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
@@ -20,36 +20,61 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-
+            <RowDefinition Height="Auto" MinHeight="25"/>
+            <RowDefinition Height="162.4"/>
+            <RowDefinition Height="233"/>
         </Grid.RowDefinitions>
 
+        <Image Grid.Row="8" Grid.Column="2" HorizontalAlignment="Center"
+               Source="http://emser.es/wp-content/uploads/2016/08/usuario-sin-foto.png" 
+               RenderTransformOrigin="1.044,0.498" Margin="10,28,10,18" Width="164"/>
+
         <Label Grid.Row="1" Grid.Column="0">IdCliente:</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=cli_PJ_Atual.id_Cli}"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=ClientePJSelecionado.id_Cliente}"></TextBox>
 
         <Label Grid.Row="2" Grid.Column="0">Nome:</Label>
-        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=cli_PJ_Atual.nome}"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=ClientePJSelecionado.nome}"></TextBox>
 
         <Label Grid.Row="3" Grid.Column="0">Cliente é Revenda:</Label>
-        <CheckBox Grid.Row="3" Grid.Column="1" IsChecked="{Binding Path=cli_PJ_Atual.revenda}"/>
+        <CheckBox Grid.Row="3" Grid.Column="1" IsChecked="{Binding Path=ClientePJSelecionado.revenda}"/>
 
-        <Label Grid.Row="4" Grid.Column="0">CPF:</Label>
-        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=cli_PJ_Atual.CNPJ}"></TextBox>
+        <Label Grid.Row="4" Grid.Column="0">CNPJ:</Label>
+        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=ClientePJSelecionado.CNPJ}"></TextBox>
 
-        <Label Grid.Row="5" Grid.Column="0">DataNascimento:</Label>
-        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=cli_PJ_Atual.razao}"></TextBox>
+        <Label Grid.Row="5" Grid.Column="0">Razão Social:</Label>
+        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=ClientePJSelecionado.razao}"></TextBox>
 
-        <Label Grid.Row="6" Grid.Column="0">EnderecoPJ:</Label>
-        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=cli_PJ_Atual.enderecoPJ}"></TextBox>
+         <Label Grid.Row="6" Grid.Column="0">EnderecoPJ:</Label>
+        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=ClientePJSelecionado.enderecoPJ}"></TextBox>
 
+        <StackPanel Margin="10,10,10,18" Orientation="Vertical" Grid.Row="8" Grid.Column="2">
+            <Button x:Name="BtnSelecionarFoto" Click="BtnSelecionarFoto_Click">Selecionar Foto ou Logo</Button>
+            <Image Margin="5" Stretch="Uniform" Height="100" Source="{Binding ClientePJSelecionado.foto}"/>
+        </StackPanel>
 
-        <Button Grid.Row="7" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"
-                x:Name="OkButton" Click="OkButton_Click">Ok</Button>
-        <Button Grid.Row="7" Grid.Column="1" Width="100" Margin="20" HorizontalAlignment="Left"
-                x:Name="CancelarButton" Click="CancelarButton_Click">Cancelar</Button>
+        <DataGrid Grid.Row="8" Grid.ColumnSpan="2" 
+                  Visibility="{Binding Path=VisibilidadeDataGrid}"
+                  ItemsSource="{Binding Path=BdCliente}"
+                  SelectedItem="{Binding Path=ClientePJSelecionado}"
+                  AutoGenerateColumns="False" Margin="10,10,10,18">
 
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding id_Cliente}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Nome" Binding="{Binding nome}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="CPJ" Binding="{Binding CNPJ}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Razao" Binding="{Binding razao}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Endereço" Binding="{Binding enderecoPJ}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
 
+        <Button Grid.Row="9" Grid.Column="0" Width="100" Margin="0,20,20,177"
+                HorizontalAlignment="Right"
+                x:Name="OkButton" 
+                Click="OkButton_Click">Salvar</Button>
 
+        <Button Grid.Row="9" Grid.Column="1" Width="100" Margin="20,20,0,177"
+                HorizontalAlignment="Left"
+                x:Name="CancelarButton"
+                Click="CancelarButton_Click">Sair</Button>
     </Grid>
 </Window>

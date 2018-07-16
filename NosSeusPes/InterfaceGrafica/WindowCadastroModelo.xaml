@@ -5,11 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InterfaceGrafica"
         mc:Ignorable="d"
-        xmlns:System="clr-namespace:System;assembly=mscorlib"
-        Title="WindowCadastroModelo" Height="600" Width="600">
-
+        Title="WindowCadastroModelo" Height="550" Width="600">
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
@@ -21,46 +20,49 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" MinHeight="25"/>
+            <RowDefinition Height="162.4"/>
+            <RowDefinition Height="233"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="1">IdModelo:</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.id_Modelo}"></TextBox>
+        <Image Grid.Row="8" Grid.Column="2" HorizontalAlignment="Center"
+               Source="http://emser.es/wp-content/uploads/2016/08/usuario-sin-foto.png" 
+               RenderTransformOrigin="1.044,0.498" Margin="10,28,10,18" Width="164"/>
 
-        <Label Grid.Row="2">Nome:</Label>
-        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.nome}"></TextBox>
+        <Label Grid.Row="1" Grid.Column="0">IdModelo:</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=ModeloSelecionado.id_Modelo}"></TextBox>
 
-        <Label Grid.Row="3">Cadarco:</Label>
-        <CheckBox Grid.Row="3" Grid.Column="1" IsChecked="{Binding Path=modeloParaSalvar.cadarco}" />
+        <Label Grid.Row="2" Grid.Column="0">Nome:</Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=ModeloSelecionado.nome}"></TextBox>
 
-        <Label Grid.Row="4">Material:</Label>
-        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.material}"></TextBox>
+        <Label Grid.Row="3" Grid.Column="0">Cadarço:</Label>
+        <CheckBox Grid.Row="3" Grid.Column="1" IsChecked="{Binding Path=ModeloSelecionado.cadarco}"/>
 
-        <Label Grid.Row="5">Cor:</Label>
-        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.cor}"></TextBox>
+        <Label Grid.Row="4" Grid.Column="0">Material:</Label>
+        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=ModeloSelecionado.material}"></TextBox>
 
-        <Label Grid.Row="6">Tamanho:</Label>
-        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.tamanho}"></TextBox>
+        <Label Grid.Row="5" Grid.Column="0">Cor:</Label>
+        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=ModeloSelecionado.cor}"></TextBox>
 
-        <Label Grid.Row="7">Preço:</Label>
-        <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding Path=modeloParaSalvar.preco}"></TextBox>
+        <Label Grid.Row="6" Grid.Column="0">Tamanho:</Label>
+        <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=ModeloSelecionado.tamanho}"></TextBox>
 
+        <Label Grid.Row="7" Grid.Column="0">Preço:</Label>
+        <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding Path=ModeloSelecionado.preco}"></TextBox>
 
-            <Button Grid.Row="9" Grid.Column="0" Width="100" Margin="20" HorizontalAlignment="Right"
-                x:Name="OkButton" Click="OkButton_Click">Ok</Button>
-        <Button Grid.Row="9" Grid.Column="1" Width="100" Margin="20" HorizontalAlignment="Left"
-                x:Name="CancelarButton" Click="CancelarButton_Click">Cancelar</Button>
+        <StackPanel Margin="10,10,10,18" Orientation="Vertical" Grid.Row="8" Grid.Column="2">
+            <Button x:Name="BtnSelecionarFoto" Click="BtnSelecionarFoto_Click">Selecionar Foto ou Logo</Button>
+            <Image Margin="5" Stretch="Uniform" Height="100" Source="{Binding ModeloSelecionado.foto}"/>
+        </StackPanel>
 
-        <DataGrid x:Name="GridBdModelo" Grid.Row="11" Grid.ColumnSpan="2" Margin="20" Visibility='Visible'
-                  ItemsSource="{Binding Modelo}"  CanUserAddRows="False" IsReadOnly="True" AutoGenerateColumns="False" >
+        <DataGrid Grid.Row="8" Grid.ColumnSpan="2" 
+                  Visibility="{Binding Path=VisibilidadeDataGrid}"
+                  ItemsSource="{Binding Path=BdModelo}"
+                  SelectedItem="{Binding Path=ModeloSelecionado}"
+                  AutoGenerateColumns="False" Margin="10,10,10,18">
 
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Binding="{Binding Id_Modelo}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Id" Binding="{Binding id_Modelo}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Nome" Binding="{Binding nome}" ></DataGridTextColumn>
                 <DataGridTextColumn Header="Cadarco" Binding="{Binding cadarco}" ></DataGridTextColumn>
                 <DataGridTextColumn Header="Material" Binding="{Binding material}"></DataGridTextColumn>
@@ -70,7 +72,14 @@
             </DataGrid.Columns>
         </DataGrid>
 
+        <Button Grid.Row="9" Grid.Column="0" Width="100" Margin="0,20,20,177"
+                HorizontalAlignment="Right"
+                x:Name="OkButton" 
+                Click="OkButton_Click">Salvar</Button>
 
+        <Button Grid.Row="9" Grid.Column="1" Width="100" Margin="20,20,0,177"
+                HorizontalAlignment="Left"
+                x:Name="CancelarButton"
+                Click="CancelarButton_Click">Sair</Button>
     </Grid>
 </Window>
-    

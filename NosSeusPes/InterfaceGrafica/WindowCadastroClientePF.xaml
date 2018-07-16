@@ -75,6 +75,6 @@
         <Button Grid.Row="9" Grid.Column="1" Width="100" Margin="20,20,0,177"
                 HorizontalAlignment="Left"
                 x:Name="CancelarButton"
-                Click="CancelarButton_Click">Cancelar</Button>
+                Click="CancelarButton_Click">Sair</Button>
     </Grid>
 </Window>

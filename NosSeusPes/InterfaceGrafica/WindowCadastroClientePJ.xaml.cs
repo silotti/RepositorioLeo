@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,104 +18,138 @@ using System.Windows.Shapes;
 namespace InterfaceGrafica
 {
     /// <summary>
-    /// Interaction logic for WindowCadastroCliente.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class WindowCadastroClientePJ : Window,
         INotifyPropertyChanged
     {
-        #region "ConstrutorDaClasse"
+        BancosSapataria ctx = new BancosSapataria(); //cria obj ctx para salvar no arquivo com os bancos de dados
+        private ClientePJ Cli_PJ_Atual = new ClientePJ(); //cria obj Cli_PJ_Atual com a classe ClientePJ   
+
+        #region "selecionar pela tabela"
+        //valor atual dos campos de preenchimento
+        public ClientePJ ClientePJSelecionado
+        {
+            get
+            {
+                return Cli_PJ_Atual; // lambda expression
+            }
+            set
+            {
+                Cli_PJ_Atual = value;
+                this.NotifyPropertyChanged("ClientePJSelecionado");
+            }
+        }
+        #endregion
+
+        //cria a variavel ModoCriarNovo da Tabela e já seta ela como false
+        public Boolean ModoCriarNovo { get; set; } = false;
+
+        #region "VisibilidadeDataGrid"
+        //se foi selecionada da tabela retorna os dados
+        public Visibility VisibilidadeDataGrid
+        {
+           get
+           {
+                // se verdade
+                if (ModoCriarNovo)
+                {
+                    return Visibility.Hidden;
+                }
+                // se falso
+                else
+                {
+                    return Visibility.Visible;
+                }
+            }
+        }
+        #endregion
+
+        // cria IList de clientes para usar na tabela
+        public IList<Cliente> BdCliente { get; set; } 
+
+        #region "Construtor da Classe"
         public WindowCadastroClientePJ()
         {
             InitializeComponent();
             this.DataContext = this;
+            this.BdCliente = ctx.BdCliente.ToList(); //salva banco como lista de clientes
         }
-        public ClientePJ cli_PJ_Atual { get; set; } = new ClientePJ(); //cria obj cli_PJ_Atual com a classe ClientePJ   
-        BancosSapataria ctx = new BancosSapataria(); //cria obj ctx para salvar no arquivo com os bancos de dados
         #endregion
 
         #region "NotifyPropertyChanged"
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(string Property)
         {
-            if (PropertyChanged != null)
+            if (this.PropertyChanged != null)
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(Property));
             }
         }
         #endregion
 
-        //public Cliente ClientePF
-        //{
-        //    get => cli_PF_Atual;
-        //    set
-        //    {
-        //        cli_PF_Atual = value;
-        //        this.NotifyPropertyChanged("ClientePF");
-        //    }
-        //}
-        //public Boolean Visao { get; set; } = false;
-        //public Visibility VisibilidadeDataGrid
-        //{
-        //   get
-        //    {
-        //        if (Visao)
-        //        {
-        //            return Visibility.Hidden;
-        //        }
-        //        else
-        //        {
-        //            return Visibility.Visible;
-        //        }
-        //    }
-        //}
-
-        //public IList<ClientePF> BdClientePF { get; set; }
-        //public ClientePF Cliente { get; }
-
-        #region "BotaoOk"
+        #region "Botao de Ok"
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-            //if (Visao)
-            //{
-            //    ctx.BdClientePF.Add(ClientePFAtual);
-            //    ctx.SaveChanges();
-            //}
-            //else
-            //{
-                //if (ClientePFAtual != null
-                //    && ClientePFAtual.id_Cliente > 0)
-                //{
-                //    ClientePF Salvar = ctx.BdClientePF.Find(ClientePFAtual.id_Cliente);
-                //    Salvar.nome = ClientePFAtual.nome;
-                //    Salvar.CPF = ClientePFAtual.CPF;
-                //    Salvar.dt_Nasc = ClientePFAtual.dt_Nasc;
-                //    Salvar.enderecoPF = ClientePFAtual.enderecoPF;
-                //    ctx.Entry(Salvar).State =
-                //        System.Data.Entity.EntityState.Modified;
-                //    ctx.SaveChanges();
-                //}
-            //}          
-            ctx.BdCliente.Add(cli_PJ_Atual); // adiciona atual ao banco de Cliente
-            ctx.SaveChanges(); // salva atualizações do banco
-            MessageBox.Show("Salvo com Sucesso"); //menssagem de salvo
-            this.Close(); //fecha janelas
+            //verifica se o cliente atual é 0 (criar)
+            if (this.ClientePJSelecionado.id_Cliente <= 0)
+            {
+                //ctx.BdCliente.Add(this.ClientePJSelecionado);
+                ctx.BdCliente.Add(this.ClientePJSelecionado); //adiciona atual ao banco de Cliente
+                ctx.SaveChanges();
+                MessageBox.Show("Cliente Novo Salvo com Sucesso"); //menssagem de salvo
+                this.Close(); //fecha janelas       
+                WindowCadastroClientePJ window = new WindowCadastroClientePJ();//abre novamente zerada
+                window.ShowDialog(); //mostra janela
+            }
+
+            //verifica se caso o id_Cliente não seja 0 (alterar)
+            else
+            {
+                ctx.SaveChanges();
+                MessageBox.Show("Alteração Salva com Sucesso"); //menssagem de salvo
+            }
         }
         #endregion
 
-        // private void PessoaFDataGridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        // private void ClientePJ_SelectionChanged(object sender, SelectionChangedEventArgs e)
         //{
-        //     foreach (ClientePF item in e.RemovedItems)
+        //     foreach (ClientePJ item in e.RemovedItems)
         //     {
-        //         ctx.BdClientePF.Remove(item);
+        //         ctx.BdClientePJ.Remove(item);
         //     }
         // }
+
+
         // public String Reg { get; set; }
 
-        #region "BotaoCancelar"
+        #region "Botao de Cancelar"
         private void CancelarButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
         #endregion
+
+        #region "Botao Foto ou Logo"
+        //função de adicionar foto
+        private void BtnSelecionarFoto_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+            dlg.FileName = "Fotografia"; // Nome padrão
+            dlg.Filter = "Imagens (*.bmp;*.jpg;*.jpeg,*.png)|*.BMP;*.JPG;*.JPEG;*.PNG";
+            Nullable<bool> result = dlg.ShowDialog();
+
+            // Somente irá salvar se o usuário selecionar um arquivo.
+            if (result == true)
+            {
+                var uri = new Uri(dlg.FileName);
+                var imagemFile = File.Open(dlg.FileName, FileMode.Open);
+                Cli_PJ_Atual.foto = new byte[imagemFile.Length];
+                imagemFile.Read(Cli_PJ_Atual.foto, 0, (int)imagemFile.Length);
+                NotifyPropertyChanged("Camisa");
+            }
+        }
+        #endregion
+
     }
 }

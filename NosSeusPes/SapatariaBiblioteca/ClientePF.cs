@@ -11,7 +11,7 @@ namespace SapatariaBiblioteca
     {
         //Classe herdada não precisa de ID 
         public String CPF { get; set; }
-        public DateTime dt_Nasc { get; set; } = DateTime.Now;
+        public DateTime dt_Nasc { get; set; } = DateTime.Parse("01/01/1980"); //DateTime.Now pra usar data atual
         public String enderecoPF { get; set; }
 
 

@@ -19,6 +19,21 @@ namespace SapatariaBiblioteca
         public String cor { get; set; }
         public int tamanho { get; set; }
         public Decimal preco { get; set; }
-        public virtual ICollection<Modelo> EstoqueModelo { get; set; } = new List<Modelo>();
+        //public virtual ICollection<Modelo> EstoqueModelo { get; set; } = new List<Modelo>();
+
+        // acrescentar arquivo de foto
+        public byte[] foto { get; set; }
+        public override bool Equals(object obj)
+        {
+            if (obj is Modelo)
+            {
+                return this.id_Modelo == ((Modelo)(obj)).id_Modelo;
+            }
+            return false;
+        }
+        public override int GetHashCode()
+        {
+            return this.id_Modelo.GetHashCode();
+        }
     }
 }
