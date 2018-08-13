@@ -15,7 +15,7 @@ namespace SapatariaBiblioteca
         public int id_Cliente { get; set; }
         public String nome { get; set; }
         public Boolean revenda { get; set; }
-        //public List<Venda> pedidos { get; set; }
+        //public List<Venda> pedidos { get; set; } //Cliente tem uma lista de Venda denominada pedidos
 
         //public virtual ICollection<Venda> VendasCliente { get; set; } = new List<Venda>();
 

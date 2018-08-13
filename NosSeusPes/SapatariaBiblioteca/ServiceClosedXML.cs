@@ -12,7 +12,6 @@ namespace NosSeusPes
     {
         
 
-
         public static void CriarPlanilhaClientes(IEnumerable<Cliente> cliente, String caminho)
         {
             BancosSapataria ctx = new BancosSapataria();

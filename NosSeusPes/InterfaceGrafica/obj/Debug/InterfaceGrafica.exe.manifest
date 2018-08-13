@@ -126,14 +126,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InterfaceGrafica.exe" size="43984">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InterfaceGrafica.exe" size="43008">
       <assemblyIdentity name="InterfaceGrafica" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QeXsSMPuUEPI6y5IFY+JOhxkJgEEoixCB2ufU9tNhrc=</dsig:DigestValue>
+        <dsig:DigestValue>vPoNomaxCUvCrKcR23AuDKttEBHVGDaDgk3rdyy8D5Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -150,14 +150,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SapatariaBiblioteca.dll" size="20992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SapatariaBiblioteca.dll" size="27136">
       <assemblyIdentity name="SapatariaBiblioteca" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ugtXauZc3LPkQsh83hnx0KwKFPr6TOfpxD7/m9KDVwI=</dsig:DigestValue>
+        <dsig:DigestValue>tT4IZ8ZdinSNjudZAt8k7MxPrbEVRfzPhXlz8YeHseM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -233,13 +233,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="InterfaceGrafica.exe.config" size="1326">
+  <file name="InterfaceGrafica.exe.config" size="1296">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>dl1KJgcZ6neBNgaJaQeLZ49GRr16SZ3qwdgNnrJpo98=</dsig:DigestValue>
+      <dsig:DigestValue>SIFhaGwPJ3BfcUowjjWYMjMM80Xe5gedyfPZRRkILU0=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

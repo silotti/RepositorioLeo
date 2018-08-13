@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\
+C:\Users\Leo\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\obj\Debug\
 InterfaceGrafica
 none
 false
 DEBUG;TRACE
-C:\Users\Giovano\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\App.xaml
+C:\Users\Leo\Documents\Visual Studio 2017\Projects\RepositorioLeo\NosSeusPes\InterfaceGrafica\App.xaml
 71090270855
 
-15-1296177356
-30358371132
+15-1687019099
+30250926347
 MainWindow.xaml;WindowCadastroClientePJ.xaml;WindowCadastroEstoque.xaml;WindowCadastroClientePF.xaml;WindowCadastroModelo.xaml;WindowCadastroPedido.xaml;WindowGerarVenda.xaml;
 
-True
+False
 

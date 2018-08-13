@@ -25,8 +25,6 @@ namespace SapatariaBiblioteca
         //[InverseProperty("id_Pedido")]
         //public Pedido pedido { get; set; }
 
-
-
         //public List<Pedido> ped{ get; set; }
     }
 }

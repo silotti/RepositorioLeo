@@ -63,7 +63,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding id_Cliente}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Nome" Binding="{Binding nome}" ></DataGridTextColumn>
-                <DataGridTextColumn Header="CPJ" Binding="{Binding CNPJ}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="CNPJ" Binding="{Binding CNPJ}" ></DataGridTextColumn>
                 <DataGridTextColumn Header="Razao" Binding="{Binding razao}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Endereço" Binding="{Binding enderecoPJ}"></DataGridTextColumn>
             </DataGrid.Columns>

@@ -29,6 +29,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="ClosedXML, Version=0.93.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ClosedXML.0.93.0\lib\net46\ClosedXML.dll</HintPath>
@@ -94,20 +97,24 @@
     <Compile Include="Migrations\201806300058109_v2.Designer.cs">
       <DependentUpon>201806300058109_v2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808120014570_V3.cs" />
+    <Compile Include="Migrations\201808120014570_V3.Designer.cs">
+      <DependentUpon>201808120014570_V3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="BancosSapataria.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Estoque.cs" />
     <Compile Include="Modelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SalvaClientePF.cs" />
-    <Compile Include="SalvaClientePJ.cs" />
-    <Compile Include="SalvaModelo.cs" />
     <Compile Include="ServiceClosedXML.cs" />
     <Compile Include="Venda.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806300058109_v2.resx">
       <DependentUpon>201806300058109_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808120014570_V3.resx">
+      <DependentUpon>201808120014570_V3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

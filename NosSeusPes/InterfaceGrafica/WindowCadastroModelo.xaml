@@ -31,7 +31,7 @@
 
         <Label Grid.Row="1" Grid.Column="0">IdModelo:</Label>
         <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=ModeloSelecionado.id_Modelo}" 
-                 IsReadOnly="True" IsTabStop="False" Focusable="False" Name="tbFocusMe"
+                 IsReadOnly="True" IsTabStop="False" Focusable="False"
                  IsHitTestVisible="False" BorderBrush="{x:Null}"/>
         
         <Label Grid.Row="2" Grid.Column="0">Nome:</Label>

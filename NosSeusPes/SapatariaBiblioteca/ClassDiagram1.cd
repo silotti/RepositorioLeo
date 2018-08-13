@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SapatariaBiblioteca.Cliente">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAQAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAIAAAEA=</HashCode>
+      <FileName>Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SapatariaBiblioteca.ClientePF">
+    <Position X="1.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAACAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ClientePF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SapatariaBiblioteca.ClientePJ">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAIAAAAACAAAAAAAAA=</HashCode>
+      <FileName>ClientePJ.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SapatariaBiblioteca.Estoque">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAQAAAAAAAAAEAA=</HashCode>
+      <FileName>Estoque.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SapatariaBiblioteca.Modelo">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAgIAAAQAAAAAAQIQAAAAAAABAQEA=</HashCode>
+      <FileName>Modelo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SapatariaBiblioteca.Pedido">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAQAAAAAAAAAAAAAAAgAAQAAAAAAgAAAAEAA=</HashCode>
+      <FileName>Pedido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SapatariaBiblioteca.Venda">
+    <Position X="1.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAEAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Venda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
